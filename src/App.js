@@ -14,19 +14,33 @@ function App() {
 				<div className='text-center' style={{ padding: '25px' }}>
 					<img src='/picture.jpg' style={{ borderRadius: '100%' }} />
 
-					<h1 style={{ paddingTop: '25px' }}>Jacob Schnettler</h1>
+					<h1 style={{ paddingTop: '15px' }}>Jacob Schnettler</h1>
 
-					<a
-						href='https://github.com/IamAdren'
-						target='_blank'
-						style={{
-							marginTop: '25px',
-							fontSize: '35px',
-							color: 'black',
-						}}
-					>
-						<i className='fab fa-github'></i>
-					</a>
+					<div>
+						<a
+							href='https://github.com/IamAdren'
+							target='_blank'
+							style={{
+								fontSize: '35px',
+								padding: '5px',
+								color: 'black',
+							}}
+						>
+							<i className='fab fa-github'></i>
+						</a>
+
+						<a
+							href='mailto: jacobschnettler12@gmail.com'
+							target='_blank'
+							style={{
+								fontSize: '35px',
+								padding: '5px',
+								color: 'black',
+							}}
+						>
+							<i className='fas fa-envelope-square'></i>
+						</a>
+					</div>
 				</div>
 
 				<p
