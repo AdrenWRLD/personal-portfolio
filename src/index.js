@@ -7,7 +7,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App';
 
-import { AdvancedJavaPage, AdrenWorldPage, ItemTrackerPage } from './pages';
+import {
+	AdvancedJavaPage,
+	AdrenWorldPage,
+	ItemTrackerPage,
+	SecuritySystemPage,
+} from './pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -30,6 +35,11 @@ root.render(
 				<Route
 					path='/projects/items-tracker'
 					element={<ItemTrackerPage />}
+				/>
+
+				<Route
+					path='/projects/security-system'
+					element={<SecuritySystemPage />}
 				/>
 			</Routes>
 		</BrowserRouter>

@@ -91,6 +91,18 @@ function App() {
 					>
 						Personal Items Tracker
 					</Link>
+
+					<Link
+						className='btn btn-primary'
+						to='/projects/security-system'
+						style={{
+							width: '100%',
+							marginBottom: '10px',
+							fontWeight: '700',
+						}}
+					>
+						Security Camera System
+					</Link>
 				</div>
 			</header>
 		</div>
