@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Config } from './config';
 
 function App() {
 	return (
@@ -10,16 +11,16 @@ function App() {
 				justifyContent: 'center',
 			}}
 		>
-			<header style={{ width: '500px', marginTop: '10vh' }}>
+			<header style={{ width: '500px', marginTop: '3.5vh' }}>
 				<div className='text-center' style={{ padding: '25px' }}>
-					<img src='/picture.jpg' style={{ borderRadius: '100%' }} />
+					<img src={Config.avatar} style={{ borderRadius: '100%' }} />
 
 					<h1 style={{ paddingTop: '15px' }}>Jacob Schnettler</h1>
 
 					<div>
 						<a
-							href='https://github.com/IamAdren'
-							target='_blank'
+							href={Config.github}
+							target='_bl	ank'
 							style={{
 								fontSize: '35px',
 								padding: '5px',
@@ -30,7 +31,7 @@ function App() {
 						</a>
 
 						<a
-							href='mailto: jacobschnettler12@gmail.com'
+							href={`mailto: ${Config.email}`}
 							target='_blank'
 							style={{
 								fontSize: '35px',
@@ -43,66 +44,80 @@ function App() {
 					</div>
 				</div>
 
-				<p
-					className='text-center'
-					style={{
-						fontWeight: '700',
-						fontSize: '20px',
-						margin: '0',
-						padding: '0',
-					}}
-				>
-					Projects
-				</p>
-
-				<div style={{ width: '500px', paddingTop: '25px' }}>
-					<Link
-						className='btn btn-primary'
-						to='/projects/adren-world'
+				<div>
+					<p
+						className='text-center'
 						style={{
-							width: '100%',
-							marginBottom: '10px',
 							fontWeight: '700',
+							fontSize: '20px',
+							margin: '0',
+							padding: '0',
 						}}
 					>
-						Adren World
-					</Link>
+						My Stack
+					</p>
 
-					<Link
-						className='btn btn-primary'
-						to='/projects/advanced-java'
+					<div
 						style={{
-							width: '100%',
-							marginBottom: '10px',
-							fontWeight: '700',
+							width: '500px',
+							paddingTop: '10px',
+							display: 'flex',
+							justifyContent: 'center',
 						}}
 					>
-						Advanced Java
-					</Link>
+						{[
+							{ icon: <i className='fab fa-ubuntu'></i> },
+							{ icon: <i class='fab fa-js-square'></i> },
+							{ icon: <i class='fab fa-html5'></i> },
+							{ icon: <i class='fab fa-css3-alt'></i> },
+							{ icon: <i class='fab fa-java'></i> },
+							{ icon: <i class='fab fa-react'></i> },
+							// mysql, mongodb, python,
+						].map((item) => (
+							<p
+								style={{
+									color: 'black',
+									margin: '0',
+									padding: '0',
+									fontSize: '30px',
+									padding: '10px',
+									// cursor: 'pointer',
+								}}
+							>
+								{item.icon}
+							</p>
+						))}
+					</div>
+				</div>
 
-					<Link
-						className='btn btn-primary'
-						to='/projects/items-tracker'
+				<div>
+					<p
+						className='text-center'
 						style={{
-							width: '100%',
-							marginBottom: '10px',
 							fontWeight: '700',
+							fontSize: '20px',
+							margin: '0',
+							padding: '0',
 						}}
 					>
-						Personal Items Tracker
-					</Link>
+						Projects
+					</p>
 
-					<Link
-						className='btn btn-primary'
-						to='/projects/security-system'
-						style={{
-							width: '100%',
-							marginBottom: '10px',
-							fontWeight: '700',
-						}}
-					>
-						Security Camera System
-					</Link>
+					<div style={{ width: '500px', paddingTop: '15px' }}>
+						{Config.projects.map((project) => (
+							<Link
+								className='btn btn-primary'
+								to={'/projects' + project.route}
+								style={{
+									width: '100%',
+									marginBottom: '10px',
+									fontWeight: '700',
+								}}
+							>
+								{project.name}
+							</Link>
+						))}
+					</div>
 				</div>
 			</header>
 		</div>

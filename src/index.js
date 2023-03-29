@@ -5,14 +5,9 @@ import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import App from './App';
+import { Config } from './config';
 
-import {
-	AdvancedJavaPage,
-	AdrenWorldPage,
-	ItemTrackerPage,
-	SecuritySystemPage,
-} from './pages';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,25 +17,12 @@ root.render(
 			<Routes>
 				<Route path='/' element={<App />} />
 
-				<Route
-					path='/projects/advanced-java'
-					element={<AdvancedJavaPage />}
-				/>
-
-				<Route
-					path='/projects/adren-world'
-					element={<AdrenWorldPage />}
-				/>
-
-				<Route
-					path='/projects/items-tracker'
-					element={<ItemTrackerPage />}
-				/>
-
-				<Route
-					path='/projects/security-system'
-					element={<SecuritySystemPage />}
-				/>
+				{Config.projects.map((project) => (
+					<Route
+						path={'/projects' + project.route}
+						element={<project.page />}
+					/>
+				))}
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
