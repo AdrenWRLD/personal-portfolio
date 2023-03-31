@@ -65,28 +65,52 @@ function App() {
 							justifyContent: 'center',
 						}}
 					>
-						{[
-							{ icon: <i className='fab fa-ubuntu'></i> },
-							{ icon: <i class='fab fa-js-square'></i> },
-							{ icon: <i class='fab fa-html5'></i> },
-							{ icon: <i class='fab fa-css3-alt'></i> },
-							{ icon: <i class='fab fa-java'></i> },
-							{ icon: <i class='fab fa-react'></i> },
-							// mysql, mongodb, python,
-						].map((item) => (
-							<p
-								style={{
-									color: 'black',
-									margin: '0',
-									padding: '0',
-									fontSize: '30px',
-									padding: '10px',
-									// cursor: 'pointer',
-								}}
-							>
-								{item.icon}
-							</p>
-						))}
+						{Config.stack.map(
+							(item) =>
+								item.line == '1' && (
+									<p
+										style={{
+											color: 'black',
+											margin: '0',
+											padding: '0',
+											fontSize: '30px',
+											padding: '10px',
+											// cursor: 'pointer',
+										}}
+									>
+										{item.icon}
+									</p>
+								)
+						)}
+					</div>
+
+					<div
+						style={{
+							width: '500px',
+							display: 'flex',
+							justifyContent: 'center',
+							paddingTop: '5px',
+							paddingBottom: '15px',
+						}}
+					>
+						{Config.stack.map(
+							(item) =>
+								item.line == '2' && (
+									<p
+										style={{
+											color: 'black',
+											margin: '0',
+											padding: '0',
+											fontSize: '30px',
+											padding: '10px',
+											paddingTop: '0',
+											// cursor: 'pointer',
+										}}
+									>
+										{item.icon}
+									</p>
+								)
+						)}
 					</div>
 				</div>
 
