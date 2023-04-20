@@ -67,6 +67,10 @@ const Stack = [
 	},
 	{
 		line: '1',
+		icon: <Icon src='/icons/lua.png' label='Lua' />,
+	},
+	{
+		line: '1',
 		label: 'Ubuntu OS',
 		icon: (
 			<Icon
@@ -155,6 +159,10 @@ const Stack = [
 				label='Git'
 			/>
 		),
+	},
+	{
+		line: '2',
+		icon: <Icon src='/icons/arduino.png' label='Arduino' />,
 	},
 	// mysql, mongodb, python,
 ];
