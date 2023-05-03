@@ -9,6 +9,8 @@ import { Config } from './config';
 
 import App from './App';
 
+import Resume from './pages/resume';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -16,6 +18,8 @@ root.render(
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<App />} />
+
+				<Route path='/resume' element={<Resume />} />
 
 				{Config.projects.map((project) => (
 					<Route

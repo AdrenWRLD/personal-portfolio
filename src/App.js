@@ -11,7 +11,12 @@ function App() {
 				justifyContent: 'center',
 			}}
 		>
-			<header style={{ width: '500px', marginTop: '3.5vh' }}>
+			<header
+				style={{
+					width: '500px',
+					marginTop: '3.5vh',
+				}}
+			>
 				<div className='text-center' style={{ padding: '25px' }}>
 					<img src={Config.avatar} style={{ borderRadius: '100%' }} />
 
@@ -40,6 +45,17 @@ function App() {
 							}}
 						>
 							<i className='fas fa-envelope-square'></i>
+						</a>
+
+						<a
+							href='/resume'
+							style={{
+								fontSize: '35px',
+								padding: '5px',
+								color: 'black',
+							}}
+						>
+							<i className='fas fa-file-user'></i>
 						</a>
 					</div>
 				</div>
@@ -127,7 +143,13 @@ function App() {
 						Projects
 					</p>
 
-					<div style={{ width: '500px', paddingTop: '15px' }}>
+					<div
+						style={{
+							width: '500px',
+							paddingTop: '15px',
+							paddingBottom: '35px',
+						}}
+					>
 						{Config.projects.map((project) => (
 							<Link
 								className='btn btn-primary'
