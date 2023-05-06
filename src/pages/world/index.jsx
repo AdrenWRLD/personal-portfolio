@@ -1,6 +1,9 @@
 export const AdrenWorldPage = () => {
 	return (
-		<div className='text-center' style={{ paddingTop: '85px' }}>
+		<div
+			className='text-center'
+			style={{ paddingTop: '85px', paddingBottom: '85px' }}
+		>
 			<p style={{ fontSize: '28px' }}>
 				What is{' '}
 				<a href='https://www.adren.world' target='_blank'>
