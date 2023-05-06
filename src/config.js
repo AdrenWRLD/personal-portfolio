@@ -25,7 +25,7 @@ const Projects = [
 	// },
 	{
 		name: 'Security Camera System',
-		route: '/items-tracker',
+		route: '/security-system',
 		page: SecuritySystemPage,
 	},
 ];

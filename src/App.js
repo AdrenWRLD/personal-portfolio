@@ -22,7 +22,18 @@ function App() {
 
 					<h1 style={{ paddingTop: '15px' }}>Jacob Schnettler</h1>
 
-					<div>
+					<a
+						href='/resume'
+						style={{
+							fontSize: '25px',
+							padding: '5px',
+							color: 'black',
+						}}
+					>
+						Resume
+					</a>
+
+					<div style={{ paddingTop: '10px' }}>
 						<a
 							href={Config.github}
 							target='_bl	ank'
@@ -45,17 +56,6 @@ function App() {
 							}}
 						>
 							<i className='fas fa-envelope-square'></i>
-						</a>
-
-						<a
-							href='/resume'
-							style={{
-								fontSize: '35px',
-								padding: '5px',
-								color: 'black',
-							}}
-						>
-							<i className='fas fa-file-user'></i>
 						</a>
 					</div>
 				</div>
