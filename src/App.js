@@ -60,6 +60,10 @@ function App() {
 					</div>
 				</div>
 
+				<p className='text-center'>
+					<Config.quote />
+				</p>
+
 				<div>
 					<p
 						className='text-center'

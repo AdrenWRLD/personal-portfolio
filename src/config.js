@@ -173,4 +173,12 @@ export const Config = {
 	github: 'https://github.com/IamAdren',
 	projects: Projects,
 	stack: Stack,
+	quote: () => (
+		<span style={{ fontSize: '22px', fontStyle: 'italic' }}>
+			'“It is hard to fail, but it is worse never to have tried to
+			succeed.”
+			<br /> – Theodore Roosevelt
+			<br />
+		</span>
+	),
 };
