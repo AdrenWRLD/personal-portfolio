@@ -1,8 +1,13 @@
+import { isMobile } from 'react-device-detect';
+
 export const AdrenWorldPage = () => {
 	return (
 		<div
 			className='text-center'
-			style={{ paddingTop: '85px', paddingBottom: '85px' }}
+			style={{
+				paddingTop: '85px',
+				paddingBottom: !isMobile ? '85px' : null,
+			}}
 		>
 			<p style={{ fontSize: '28px' }}>
 				What is{' '}
@@ -12,9 +17,16 @@ export const AdrenWorldPage = () => {
 				?
 			</p>
 
-			<p style={{ fontSize: '24px', width: '650px', margin: 'auto' }}>
-				Adren World is a management company designated to create custom
-				modifications for the GTA-5 Multipleplayer Modification{' '}
+			<p
+				style={{
+					fontSize: '24px',
+					width: isMobile ? '80%' : '45vw',
+					margin: 'auto',
+				}}
+			>
+				Adren World is a management company that creates Software as a
+				Service (SaaS) websites for the GTA-5 Multipleplayer
+				Modification{' '}
 				<a href='https://fivem.net/' target='_blank'>
 					FiveM
 				</a>
@@ -22,9 +34,24 @@ export const AdrenWorldPage = () => {
 				85,000+ users.
 			</p>
 
-			<p style={{ fontSize: '28px', paddingTop: '25px' }}>Our Brands</p>
+			<p
+				style={{
+					fontSize: '28px',
+					paddingTop: '25px',
+					width: isMobile ? '80%' : '45vw',
+					margin: 'auto',
+				}}
+			>
+				Our Brands
+			</p>
 
-			<div style={{ fontSize: '24px' }}>
+			<div
+				style={{
+					fontSize: '24px',
+					width: isMobile ? '80%' : '45vw',
+					margin: 'auto',
+				}}
+			>
 				<p>
 					<a target='_blank' href='https://www.adrencad.com'>
 						AdrenCAD
