@@ -29,7 +29,7 @@ const Projects = [
 ];
 
 export const Config = {
-	avatar: '/picture.jpg',
+	avatar: '/picture2.jpg',
 	email: 'jacobschnettler13@gmail.com',
 	github: 'https://github.com/IamAdren',
 	projects: Projects,
