@@ -12,12 +12,12 @@ const Categories = [
 		post: () => <div style={{ paddingBottom: '10px' }}>
 			<img
 				src='/esp32/asset_1.png'
-				style={{ height: '200px', margin: '10px', marginLeft: '0' }}
+				style={isMobile ? { width: '100%', marginTop: "10px", marginBottom: '10px' } : { height: '200px', margin: '10px', marginLeft: '0' }}
 			/>
 
 			<img
 				src='/esp32/asset_2.png'
-				style={{ height: '200px', margin: '10px' }}
+				style={isMobile ? { width: '100%', marginTop: "10px", marginBottom: '10px' } : { height: '200px', margin: '10px' }}
 			/>
 		</div>
 	},
@@ -33,7 +33,7 @@ const Categories = [
 		post: () => <div style={{ paddingBottom: '10px' }}>
 			<img
 				src='https://camo.githubusercontent.com/bb964fe18551082f75b669f7e9e4aa996ccae5202604c8742fc884845faa6bfd/68747470733a2f2f692e696d6775722e636f6d2f30726d6f704f782e706e67'
-				style={{ height: '200px', margin: '10px', marginLeft: '0' }}
+				style={isMobile ? { width: '100%', marginTop: "10px", marginBottom: '10px' } : { height: '200px', margin: '10px', marginLeft: '0' }}
 			/>
 		</div>
 	},
