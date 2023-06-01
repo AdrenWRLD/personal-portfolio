@@ -13,9 +13,9 @@ const Resume = () => (
 			<section class='section'>
 				<div class='container'>
 					<h1 class='title is-1 text-focus-in'>Jacob Schnettler</h1>
-					<h2 class='subtitle is-2 text-focus-in mb-0'>
+					{/* <h2 class='subtitle is-2 text-focus-in mb-0'>
 						Student &amp; Developer
-					</h2>
+					</h2> */}
 					<p class='text-focus-in mb-4'>
 						Email me at{' '}
 						<strong>
@@ -25,7 +25,7 @@ const Resume = () => (
 						</strong>{' '}
 						to talk to me further about my work.
 					</p>
-					<h2 class='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
+					{/* <h2 class='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
 					<p class='text-focus-in2'></p>
 					<ul class='mb-2'>
 						<li>
@@ -39,8 +39,15 @@ const Resume = () => (
 					Mountain East HS
 					<br />
 					Algebra 2, English, Physics, Spanish, US History, and PE.
-					<p></p>
+					<p></p> */}
 					<hr />
+					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Certifications:</h2>
+					<ul>
+						<li>
+							- <a href='/certifications/red_cross.pdf' target="_blank">Red Cross Lifeguarding with CPR/AED for Professional Rescuers and First Aid</a>
+						</li>
+					</ul>
+					{/* <hr />
 					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
 					<p class='text-focus-in2 mb-2'>
 						Here are some skills that help in my growth and
@@ -105,13 +112,13 @@ const Resume = () => (
 							- Also have have some experience with Cisco Meraki
 							and their networking solutions.
 						</li>
-					</ul>
+					</ul> */}
 					<hr />
 					<h2 class='subtitle is-3 text-focus-in4'>
 						Past Work and Experiences:
 					</h2>
 					<div class='columns text-focus-in4 is-multiline '>
-						<div class='column is-half'>
+						{/* <div class='column is-half'>
 							<h3 class='subtitle is-5 mb-0'>
 								<strong>Adren World</strong>
 							</h3>
@@ -139,28 +146,23 @@ const Resume = () => (
 									first month.
 								</li>
 							</ul>
-						</div>
+						</div> */}
 
 						<div class='column is-half'>
 							<h3 class='subtitle is-5 mb-0'>
-								<strong>Lifeguarding - Camelback Resort</strong>
+								<strong>Camelback Resort</strong>
 							</h3>
-							<a href='https://weblutions.com/' target='_blank'>
-								Visit our Website
-							</a>
 							<ul class='mt-2'>
-								<li>- Working with other Developers.</li>
+								<li>- Lifeguarding Department</li>
 								<li>
-									- Assist clients with questions, installs,
-									ect.
+									- Food & Beverage Department
 								</li>
 								<li>
-									- Helping create quality software solutions.
+									- Rentals Department
 								</li>
-								<li>- Over 800 clients and 2,000 purchases.</li>
 							</ul>
 						</div>
-						<div class='column is-half'>
+						{/* <div class='column is-half'>
 							<h3 class='subtitle is-5 mb-0'>
 								<strong>Snowside Hosting</strong>
 							</h3>
@@ -188,14 +190,14 @@ const Resume = () => (
 									monthly growth.
 								</li>
 							</ul>
-						</div>
+						</div> */}
 					</div>
-					<center>
+					{/* <center>
 						<p class='text-focus-in4'>
 							Copyright © Jacob Schnettler{' '}
 							{new Date().getFullYear()} - All Rights Reserved
 						</p>
-					</center>
+					</center> */}
 				</div>
 			</section>
 		</body>
