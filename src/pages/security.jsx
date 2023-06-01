@@ -46,7 +46,7 @@ const Categories = [
 
 const TableOfContents = () => <div style={{ paddingTop: '45px', paddingBottom: '25px' }}>
 	<h1 className="h5">Table of Contents</h1>
-{/*  */}
+
 	<div>
 		{Categories.map((category) => <p><a href={'#' + category.id} key={category.id}>{category.label}</a></p>)}
 	</div>
