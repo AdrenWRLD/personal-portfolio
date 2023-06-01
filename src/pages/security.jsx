@@ -1,3 +1,5 @@
+import { isMobile } from 'react-device-detect';
+
 const Categories = [
 	{
 		id: 'intro',
@@ -84,7 +86,7 @@ export const SecuritySystemPage = () => {
 				</div>
 			</div>
 
-			<div style={{ width: '60%', margin: 'auto' }}>
+			<div style={{ width:isMobile ? '85%' : '60%', margin: 'auto' }}>
 				<TableOfContents />
 
 				{Categories.map((category) =>
