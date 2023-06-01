@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { Config } from './config';
-
 import { isMobile } from 'react-device-detect';
+import { Config } from './config';
 
 const Icon = ({ src, label }) => (
 	<OverlayTrigger
@@ -345,9 +343,9 @@ function App() {
 						}}
 					>
 						{Config.projects.map((project) => (
-							<Link
+							<a
 								className='btn btn-primary'
-								to={'/projects' + project.route}
+								href={'/projects' + project.route}
 								style={{
 									width: '100%',
 									marginBottom: '10px',
@@ -355,7 +353,7 @@ function App() {
 								}}
 							>
 								{project.name}
-							</Link>
+							</a>
 						))}
 					</div>
 				</div>
