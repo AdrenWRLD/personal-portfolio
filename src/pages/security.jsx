@@ -4,14 +4,15 @@ const Categories = [
 	{
 		id: 'intro',
 		label: 'Introduction',
+		post: () => <p>The inspiration for this project came from not wanting too use a security service like Ring or Blink.</p>
 	},
 	{
 		id: 'eletronics',
 		label: 'Eletronics',
-		post: () => <div style={{paddingBottom:'10px'}}>
+		post: () => <div style={{ paddingBottom: '10px' }}>
 			<img
 				src='/esp32/asset_1.png'
-				style={{ height: '200px', margin: '10px',marginLeft:'0' }}
+				style={{ height: '200px', margin: '10px', marginLeft: '0' }}
 			/>
 
 			<img
@@ -23,20 +24,23 @@ const Categories = [
 	{
 		id: '3d-modeling',
 		label: '3D Modeling',
+		post: () => <p>The inspiration for this project came from not wanting too use a security service like Ring or Blink.</p>
+
 	},
 	{
 		id: 'software',
 		label: 'Software',
-		post: () => <div style={{paddingBottom:'10px'}}>
+		post: () => <div style={{ paddingBottom: '10px' }}>
 			<img
 				src='https://camo.githubusercontent.com/bb964fe18551082f75b669f7e9e4aa996ccae5202604c8742fc884845faa6bfd/68747470733a2f2f692e696d6775722e636f6d2f30726d6f704f782e706e67'
-				style={{ height: '200px', margin: '10px',marginLeft:'0' }}
+				style={{ height: '200px', margin: '10px', marginLeft: '0' }}
 			/>
 		</div>
 	},
 	{
 		id: 'showcase',
 		label: 'Showcase',
+		post: () => <p>The inspiration for this project came from not wanting too use a security service like Ring or Blink.</p>
 	}
 ]
 
@@ -86,7 +90,7 @@ export const SecuritySystemPage = () => {
 				</div>
 			</div>
 
-			<div style={{ width:isMobile ? '85%' : '60%', margin: 'auto' }}>
+			<div style={{ width: isMobile ? '85%' : '60%', margin: 'auto' }}>
 				<TableOfContents />
 
 				{Categories.map((category) =>
@@ -94,8 +98,6 @@ export const SecuritySystemPage = () => {
 						<h1 className="h5">{category.label}</h1>
 
 						{category.post && <category.post />}
-
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eius quasi nam quos. Id, asperiores ex eum soluta obcaecati quae qui officiis corrupti, harum reprehenderit perferendis consequuntur porro! Quibusdam, modi?</p>
 					</div>
 				)}
 			</div>

@@ -46,6 +46,9 @@ const Resume = () => (
 						<li>
 							- <a href='/certifications/red_cross.pdf' target="_blank">Red Cross Lifeguarding with CPR/AED for Professional Rescuers and First Aid</a>
 						</li>
+						<li>
+							- CompTIA A+
+						</li>
 					</ul>
 					{/* <hr />
 					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
