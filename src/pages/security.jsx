@@ -87,6 +87,8 @@ export const SecuritySystemPage = () => {
 							<i className='fab fa-github'></i> Frontend Client
 						</a>
 					</p> */}
+
+					{/* hr */}
 				</div>
 			</div>
 
