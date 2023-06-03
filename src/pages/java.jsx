@@ -1,160 +1,22 @@
-// const Projects = [
-// 	{
-// 		name: 'NFL Team Picker',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/NFLTeamPicker.java',
-// 	},
-// 	{
-// 		name: 'NIM 753',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/NIM753.java',
-// 	},
-// 	{
-// 		name: 'Dice Bet',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/DiceBet.java',
-// 	},
-// 	{
-// 		name: 'Hangman Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/Hangman.java',
-// 	},
-// 	{
-// 		name: 'Millionare Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/Millionare.java',
-// 	},
-// 	{
-// 		name: 'Pizza Picker',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/PizzaPicker.java',
-// 	},
-// 	{
-// 		name: 'Yes Or No Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/YesOrNo.java',
-// 	},
-// 	{
-// 		name: 'Number Time Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/NumberTime.java',
-// 	},
-// 	{
-// 		name: 'Deal or No Deal Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/DealOrNoDeal.java',
-// 	},
-// 	{
-// 		name: 'Connect Four',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/ConnectFour.java',
-// 	},
-// 	{
-// 		name: 'Image Guesser',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/ImageGuesser.java',
-// 	},
-// 	{
-// 		name: 'Battle Ship Game',
-// 		src: 'https://github.com/IamAdren/advanced-java/blob/main/BattleshipGame.java',
-// 	},
-// 	{
-// 		name: 'Survivor Game',
-//         src: 'https://github.com/IamAdren/advanced-java/blob/main/SurvivorGame.java'
-// 	},
-// ];
-
 import { useState, useEffect } from 'react';
-
-import { Button, Card, Container } from 'react-bootstrap';
-
-import { silentUpdate } from '../utils';
+import { Button, Card, Container, Spinner } from 'react-bootstrap';
 
 export const AdvancedJavaPage = () => {
 	const [Projects, setProjects] = useState(null);
 
+	const [Fetching, setFetching] = useState(true);
+
+	const [SelectedProject, setSelectedProject] = useState(null);
+
 	useEffect(() => {
+		setFetching(true);
+
 		fetch(
 			'https://raw.githubusercontent.com/jacobschnettler/advanced-java/main/projects.json'
 		)
 			.then((response) => response.json())
 			.then((data) => {
-				const projects = [
-					{
-						label: 'Battleship',
-						id: 'battleship',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/efxfOku.png',
-							'https://i.imgur.com/TMnbTAa.png',
-						],
-					},
-					{
-						label: 'Image Guesser',
-						id: 'image-guesser',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/WR79WBl.png',
-							'https://i.imgur.com/3nDyure.png',
-						],
-					},
-					{
-						label: 'Who wants to be a Millionare',
-						id: 'millionare',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: ['https://i.imgur.com/2P9Wh5M.png'],
-					},
-					{
-						label: 'Hangman',
-						id: 'hangman',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: ['https://i.imgur.com/iFzWmbv.png'],
-					},
-					{
-						label: 'NIM 753',
-						id: 'nim-753',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/ITSmz2z.png',
-							'https://i.imgur.com/JC1o1C9.png',
-						],
-					},
-					{
-						label: 'Number Time',
-						id: 'number-time',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/teQ2UPO.png',
-							'https://i.imgur.com/e7V73EN.png',
-						],
-					},
-					{
-						label: 'Casino Slots',
-						id: 'casino-slots',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/rEOoQgB.png',
-							'https://i.imgur.com/fds6uLd.png',
-							'https://i.imgur.com/C5MZjyD.png',
-						],
-					},
-					{
-						label: 'NFL Team Picker',
-						id: 'nfl-team-picker',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: ['https://i.imgur.com/vdgwRwj.png'],
-					},
-					{
-						label: 'Dice Bet',
-						id: 'dice-bet',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: [
-							'https://i.imgur.com/mOo4iPh.png',
-							'https://i.imgur.com/KbNaddg.png',
-						],
-					},
-					{
-						label: 'Simple Clock',
-						id: 'simple-clock',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: ['https://i.imgur.com/pJ2qqYd.png'],
-					},
-					{
-						label: 'Pizza Picker',
-						id: 'pizza-picker',
-						repo: 'https://github.com/marwin1991/profile-technology-icons#-javascript',
-						previews: ['https://i.imgur.com/e7V73EN.png'],
-					},
-				];
+				const projects = data;
 
 				setProjects(projects);
 
@@ -166,22 +28,19 @@ export const AdvancedJavaPage = () => {
 					projects.forEach((p) => {
 						if (p.id == project) setSelectedProject(p);
 					});
+
+				setFetching(false);
+			})
+			.catch((err) => {
+				console.log(err);
+
+				alert(
+					'Unexpected error while trying to fetch course projects.'
+				);
 			});
 	}, []);
 
-	const [SelectedProject, setSelectedProject] = useState(null);
-
-	useEffect(() => {
-		if (!Projects) return;
-
-		if (SelectedProject)
-			silentUpdate(
-				'/projects/advanced-java?project=' + SelectedProject.id
-			);
-		else silentUpdate('/projects/advanced-java');
-	}, [Projects, SelectedProject]);
-
-	return Projects ? (
+	return !Fetching ? (
 		SelectedProject ? (
 			<Container style={{ paddingTop: '30px', paddingBottom: '30px' }}>
 				<h1 className='h2'>{SelectedProject.label}</h1>
@@ -215,11 +74,17 @@ export const AdvancedJavaPage = () => {
 							style={{ marginBottom: '20px' }}
 						>
 							<Card body>
-								<Card.Img
-									src={project.previews[0]}
-									style={{ cursor: 'pointer' }}
-									onClick={() => setSelectedProject(project)}
-								/>
+								<a
+									href={
+										'/projects/advanced-java?project=' +
+										project.id
+									}
+								>
+									<Card.Img
+										src={project.previews[0]}
+										style={{ cursor: 'pointer' }}
+									/>
+								</a>
 
 								<Card.Title
 									style={{
@@ -232,16 +97,22 @@ export const AdvancedJavaPage = () => {
 
 								<hr />
 
-								<Button
-									onClick={() => setSelectedProject(project)}
-									style={{
-										marginTop: '10px',
-										width: '100%',
-										fontWeight: '700',
-									}}
+								<a
+									href={
+										'/projects/advanced-java?project=' +
+										project.id
+									}
 								>
-									View Project
-								</Button>
+									<Button
+										style={{
+											marginTop: '10px',
+											width: '100%',
+											fontWeight: '700',
+										}}
+									>
+										View Project
+									</Button>
+								</a>
 
 								<Button
 									href={project.repo}
@@ -262,6 +133,29 @@ export const AdvancedJavaPage = () => {
 			</Container>
 		)
 	) : (
-		'Fetching Projects'
+		<div className='text-center' style={{ paddingTop: '85px' }}>
+			<Spinner
+				animation='border'
+				role='status'
+				style={{
+					height: '125px',
+					width: '125px',
+					fontSize: '25px',
+				}}
+			>
+				<span className='visually-hidden'>Loading...</span>
+			</Spinner>
+
+			<p
+				style={{
+					paddingTop: '20px',
+					fontStyle: 'italic',
+					fontSize: '30px',
+					fontWeight: '700',
+				}}
+			>
+				Fetching Projects...
+			</p>
+		</div>
 	);
 };

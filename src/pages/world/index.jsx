@@ -5,7 +5,7 @@ export const AdrenWorldPage = () => {
 		<div
 			className='text-center'
 			style={{
-				paddingTop: '85px',
+				paddingTop: '45px',
 				paddingBottom: !isMobile ? '85px' : null,
 			}}
 		>
