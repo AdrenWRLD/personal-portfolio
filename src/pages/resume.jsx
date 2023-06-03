@@ -41,14 +41,21 @@ const Resume = () => (
 					Algebra 2, English, Physics, Spanish, US History, and PE.
 					<p></p> */}
 					<hr />
-					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Certifications:</h2>
+					<h2 class='subtitle is-3 text-focus-in3 mb-1'>
+						Certifications:
+					</h2>
 					<ul>
 						<li>
-							- <a href='/certifications/red_cross.pdf' target="_blank">Red Cross Lifeguarding with CPR/AED for Professional Rescuers and First Aid</a>
+							-{' '}
+							<a
+								href='/certifications/red_cross.pdf'
+								target='_blank'
+							>
+								Red Cross Lifeguarding with CPR/AED for
+								Professional Rescuers and First Aid
+							</a>
 						</li>
-						<li>
-							- CompTIA A+
-						</li>
+						<li>- CompTIA A+</li>
 					</ul>
 					{/* <hr />
 					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
@@ -156,13 +163,9 @@ const Resume = () => (
 								<strong>Camelback Resort</strong>
 							</h3>
 							<ul class='mt-2'>
-								<li>- Lifeguarding Department</li>
-								<li>
-									- Food & Beverage Department
-								</li>
-								<li>
-									- Rentals Department
-								</li>
+								<li>- Aquatics Department</li>
+								<li>- Food & Beverage Department</li>
+								<li>- Rentals Department</li>
 							</ul>
 						</div>
 						{/* <div class='column is-half'>
