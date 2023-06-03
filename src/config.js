@@ -31,7 +31,7 @@ const Projects = [
 export const Config = {
 	avatar: '/picture2.jpg',
 	email: 'jacobschnettler13@gmail.com',
-	github: 'https://github.com/IamAdren',
+	github: 'https://github.com/jacobschnettler',
 	youtube: 'https://www.youtube.com/@jschnettler_',
 	projects: Projects,
 	quote: () => (
