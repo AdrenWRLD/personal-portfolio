@@ -186,17 +186,6 @@ function App() {
 
 					<div style={{ paddingTop: '10px' }}>
 						<a
-							href={Config.youtube}
-							target='_bl	ank'
-							style={{
-								fontSize: '35px',
-								padding: '5px',
-								color: 'black',
-							}}
-						>
-							<i className='fab fa-youtube'></i>
-						</a>
-						<a
 							href={Config.github}
 							target='_bl	ank'
 							style={{
@@ -206,6 +195,17 @@ function App() {
 							}}
 						>
 							<i className='fab fa-github'></i>
+						</a>
+						<a
+							href={Config.youtube}
+							target='_bl	ank'
+							style={{
+								fontSize: '35px',
+								padding: '5px',
+								color: 'black',
+							}}
+						>
+							<i className='fab fa-youtube'></i>
 						</a>
 						<a
 							href={`mailto: ${Config.email}`}
