@@ -32,6 +32,7 @@ export const Config = {
 	avatar: '/picture2.jpg',
 	email: 'jacobschnettler13@gmail.com',
 	github: 'https://github.com/IamAdren',
+	youtube: 'https://www.youtube.com/@jschnettler_',
 	projects: Projects,
 	quote: () => (
 		<span style={{ fontSize: '22px', fontStyle: 'italic' }}>
