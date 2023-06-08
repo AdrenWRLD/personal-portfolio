@@ -43,21 +43,103 @@ export const AdvancedJavaPage = () => {
 	return !Fetching ? (
 		SelectedProject ? (
 			<Container style={{ paddingTop: '30px', paddingBottom: '30px' }}>
-				<h1 className='h2'>{SelectedProject.label}</h1>
+				<div style={{ display: 'flex', alignItems: 'center' }}>
+					<h1 className='h2'>{SelectedProject.label}</h1>
+
+					<a
+						href='/projects/advanced-java'
+						style={{ paddingLeft: '25px' }}
+					>
+						Other Projects
+					</a>
+				</div>
+
+				<div className='row' style={{ marginBottom: '15px' }}>
+					<div className='col-md-8' />
+
+					<div className='col-md-4 text-center'>
+						<a href='#' style={{ fontSize: '30px' }}>
+							<i className='fas fa-arrow-up'></i>
+						</a>
+					</div>
+				</div>
 
 				<div className='row'>
-					<div className='col-md-8'>
-						<img
-							src={SelectedProject.previews[0]}
-							style={{ width: '100%' }}
-						/>
+					<div className='col-md-8' style={{ minHeight: '420px' }}>
+						<iframe
+							width='100%'
+							height='100%'
+							src={SelectedProject.youtube}
+							title='YouTube video player'
+							frameborder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+							allowfullscreen
+						></iframe>
 					</div>
 					<div className='col-md-4'>
-						{SelectedProject.previews.map((image) => {
+						{[
+							SelectedProject.previews[0]
+								? SelectedProject.previews[0]
+								: null,
+							SelectedProject.previews[1]
+								? SelectedProject.previews[1]
+								: null,
+						].map((image) => {
 							return (
-								<img src={image} style={{ width: '100%' }} />
+								<img
+									src={image}
+									style={{ width: '100%', cursor: 'pointer' }}
+								/>
 							);
 						})}
+					</div>
+				</div>
+
+				<div className='row' style={{ marginTop: '15px' }}>
+					<div className='col-md-8'>
+						<h1 className='h2' style={{ paddingTop: '15px' }}>
+							Description:
+						</h1>
+
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Error maxime nemo corporis dolore facilis
+							optio. Praesentium, repellendus sed natus, pariatur
+							ipsa ratione est ut, consequatur ea voluptatem
+							molestiae cupiditate officiis? Lorem ipsum dolor
+							sit, amet consectetur adipisicing elit. Error maxime
+							nemo corporis dolore facilis optio. Praesentium,
+							repellendus sed natus, pariatur ipsa ratione est ut,
+							consequatur ea voluptatem molestiae cupiditate
+							officiis? Lorem ipsum dolor sit, amet consectetur
+							adipisicing elit. Error maxime nemo corporis dolore
+							facilis optio. Praesentium, repellendus sed natus,
+							pariatur ipsa ratione est ut, consequatur ea
+							voluptatem molestiae cupiditate officiis? Lorem
+							ipsum dolor sit, amet consectetur adipisicing elit.
+							Error maxime nemo corporis dolore facilis optio.
+							Praesentium, repellendus sed natus, pariatur ipsa
+							ratione est ut, consequatur ea voluptatem molestiae
+							cupiditate officiis?
+						</p>
+					</div>
+
+					<div className='col-md-4 text-center'>
+						<a href='#' style={{ fontSize: '30px' }}>
+							<i className='fas fa-arrow-down'></i>
+						</a>
+
+						<hr />
+
+						<Button
+							size='lg'
+							style={{ width: '100%', fontWeight: '700' }}
+							variant='secondary'
+							target='_blank'
+							href={SelectedProject.repo}
+						>
+							Github Repository
+						</Button>
 					</div>
 				</div>
 			</Container>
