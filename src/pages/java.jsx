@@ -65,6 +65,12 @@ export const AdvancedJavaPage = () => {
 
 	const [ShowProjectFilesModal, setShowProjectFilesModal] = useState(false);
 
+	const [MediaIndex, setMediaIndex] = useState(0);
+
+	const [ShowFullScreenImg, setShowFullScreenImg] = useState(true);
+
+	const [SelectedImage, setSelectedImage] = useState(null);
+
 	useEffect(() => {
 		setFetching(true);
 
@@ -107,6 +113,56 @@ export const AdvancedJavaPage = () => {
 				/>
 			)}
 
+			{ShowFullScreenImg && SelectedImage && (
+				<div
+					style={{
+						position: 'absolute',
+						zIndex: '900',
+						top: '0',
+						left: '0',
+						width: '100vw',
+						height: '100vh',
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+					}}
+				>
+					<div
+						style={{
+							backgroundColor: 'rgba(0, 0, 0, 0.9)',
+						}}
+					>
+						<div
+							style={{
+								height: '100%',
+								padding: '45px',
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+							}}
+						>
+							<div>
+								<a
+									href='#'
+									onClick={() => setShowFullScreenImg(false)}
+									style={{
+										position: 'absolute',
+										zIndex: '100',
+										padding: '25px',
+										color: '#eee',
+										fontSize: '45px',
+									}}
+								>
+									X
+								</a>
+
+								<img src={SelectedImage} />
+							</div>
+						</div>
+					</div>
+				</div>
+			)}
+
 			{SelectedProject ? (
 				<Container
 					style={{ paddingTop: '30px', paddingBottom: '30px' }}
@@ -126,7 +182,17 @@ export const AdvancedJavaPage = () => {
 						<div className='col-md-8' />
 
 						<div className='col-md-4 text-center'>
-							<a href='#' style={{ fontSize: '30px' }}>
+							<a
+								href='#'
+								style={{
+									fontSize: '30px',
+									color: MediaIndex == 0 ? 'black' : null,
+								}}
+								onClick={() => {
+									if (!(MediaIndex == 0))
+										setMediaIndex((index) => index - 1);
+								}}
+							>
 								<i className='fas fa-arrow-up'></i>
 							</a>
 						</div>
@@ -149,15 +215,20 @@ export const AdvancedJavaPage = () => {
 						</div>
 						<div className='col-md-4'>
 							{[
-								SelectedProject.previews[0]
-									? SelectedProject.previews[0]
+								SelectedProject.previews[MediaIndex]
+									? SelectedProject.previews[MediaIndex]
 									: null,
-								SelectedProject.previews[1]
-									? SelectedProject.previews[1]
+								SelectedProject.previews[MediaIndex + 1]
+									? SelectedProject.previews[MediaIndex + 1]
 									: null,
 							].map((image) => {
 								return (
 									<img
+										onClick={() => {
+											setSelectedImage(image);
+
+											setShowFullScreenImg(true);
+										}}
 										src={image}
 										style={{
 											width: '100%',
@@ -201,7 +272,26 @@ export const AdvancedJavaPage = () => {
 						</div>
 
 						<div className='col-md-4 text-center'>
-							<a href='#' style={{ fontSize: '30px' }}>
+							<a
+								href='#'
+								style={{
+									fontSize: '30px',
+									color:
+										MediaIndex + 1 ==
+										SelectedProject.previews.length - 1
+											? 'black'
+											: null,
+								}}
+								onClick={() => {
+									if (
+										!(
+											MediaIndex + 1 ==
+											SelectedProject.previews.length - 1
+										)
+									)
+										setMediaIndex((index) => index + 1);
+								}}
+							>
 								<i className='fas fa-arrow-down'></i>
 							</a>
 
@@ -223,15 +313,20 @@ export const AdvancedJavaPage = () => {
 									Project Files
 								</Button>
 							) : (
-								<Button
-									size='lg'
-									style={{ width: '100%', fontWeight: '700' }}
-									variant='secondary'
-									target='_blank'
-									href={SelectedProject.repo}
-								>
-									Github Repository
-								</Button>
+								SelectedProject.repo && (
+									<Button
+										size='lg'
+										style={{
+											width: '100%',
+											fontWeight: '700',
+										}}
+										variant='secondary'
+										target='_blank'
+										href={SelectedProject.repo}
+									>
+										Github Repository
+									</Button>
+								)
 							)}
 						</div>
 					</div>
@@ -310,17 +405,19 @@ export const AdvancedJavaPage = () => {
 											Project Files
 										</Button>
 									) : (
-										<Button
-											style={{
-												width: '100%',
-												fontWeight: '700',
-											}}
-											variant='secondary'
-											target='_blank'
-											href={project.repo}
-										>
-											Github Repository
-										</Button>
+										project.repo && (
+											<Button
+												style={{
+													width: '100%',
+													fontWeight: '700',
+												}}
+												variant='secondary'
+												target='_blank'
+												href={project.repo}
+											>
+												Github Repository
+											</Button>
+										)
 									)}
 								</Card>
 							</div>
