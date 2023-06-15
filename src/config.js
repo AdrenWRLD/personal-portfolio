@@ -4,6 +4,7 @@ import {
 	ItemTrackerPage,
 	SecuritySystemPage,
 	BPSoftwarePage,
+	CoursesPage,
 } from './pages';
 
 const Projects = [
@@ -16,6 +17,11 @@ const Projects = [
 		name: 'Breaking Point Software',
 		route: '/breaking-point',
 		page: BPSoftwarePage,
+	},
+	{
+		name: 'Coding Tutorials/Courses',
+		route: '/coding-tutorials',
+		page: CoursesPage,
 	},
 	{
 		name: 'Advanced Java',
