@@ -144,6 +144,21 @@ function App() {
 		// mysql, mongodb, python,
 	];
 
+	const Tools = [
+		{
+			line: '1',
+			icon: <Icon src='/icons/photoshop.png' label='Adobe Photoshop' />,
+		},
+		{
+			line: '1',
+			icon: <Icon src='/icons/vegas.png' label='Sony Vegas' />,
+		},
+		{
+			line: '1',
+			icon: <Icon src='/icons/vscode.png' label='Sony Vegas' />,
+		},
+	];
+
 	return (
 		<div
 			style={{
@@ -240,13 +255,53 @@ function App() {
 							padding: '0',
 						}}
 					>
+						Experienced with
+					</p>
+
+					<div
+						style={{
+							width: '100%',
+							paddingTop: '5px',
+							display: 'flex',
+							justifyContent: 'center',
+						}}
+					>
+						{Tools.map(
+							(item) =>
+								item.line == '1' && (
+									<p
+										style={{
+											color: 'black',
+											margin: '0',
+											padding: '0',
+											fontSize: '30px',
+											padding: '10px',
+											// cursor: 'pointer',
+										}}
+									>
+										{item.icon}
+									</p>
+								)
+						)}
+					</div>
+
+					<p
+						className='text-center'
+						style={{
+							fontWeight: '700',
+							fontSize: '20px',
+							margin: '0',
+							padding: '0',
+							paddingTop: '10px',
+						}}
+					>
 						My Stack
 					</p>
 
 					<div
 						style={{
 							width: '100%',
-							paddingTop: '10px',
+							paddingTop: '5px',
 							display: 'flex',
 							justifyContent: 'center',
 						}}
@@ -272,12 +327,10 @@ function App() {
 
 					<div
 						style={{
-							width: buttomWidth,
+							width: '100%',
+							paddingTop: '5px',
 							display: 'flex',
 							justifyContent: 'center',
-							paddingTop: '5px',
-							paddingBottom: '15px',
-							margin: 'auto',
 						}}
 					>
 						{Stack.map(
@@ -290,7 +343,6 @@ function App() {
 											padding: '0',
 											fontSize: '30px',
 											padding: '10px',
-											paddingTop: '0',
 											// cursor: 'pointer',
 										}}
 									>
@@ -331,7 +383,10 @@ function App() {
 					</div>
 				</div>
 
-				<div className='text-center' style={{ width: '100%' }}>
+				<div
+					className='text-center'
+					style={{ width: '100%', paddingTop: '10px' }}
+				>
 					<p
 						className='text-center'
 						style={{
