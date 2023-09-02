@@ -9,7 +9,12 @@ export const BPSoftwarePage = () => {
 				paddingBottom: !isMobile ? '85px' : null,
 			}}
 		>
-			<p style={{ fontSize: '28px' }}>
+			<img
+				src='https://breakingpoint.software/logo.png'
+				style={{ height: '165px', borderRadius: '18px' }}
+			/>
+
+			<p style={{ fontSize: '28px', paddingTop: '15px' }}>
 				What is{' '}
 				<a href='https://www.breakingpoint.software' target='_blank'>
 					Breaking Point Software

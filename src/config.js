@@ -18,11 +18,11 @@ const Projects = [
 		route: '/breaking-point',
 		page: BPSoftwarePage,
 	},
-	{
-		name: 'Coding Tutorials/Courses',
-		route: '/coding-tutorials',
-		page: CoursesPage,
-	},
+	// {
+	// 	name: 'Coding Tutorials/Courses',
+	// 	route: '/coding-tutorials',
+	// 	page: CoursesPage,
+	// },
 	{
 		name: 'Advanced Java',
 		route: '/advanced-java',

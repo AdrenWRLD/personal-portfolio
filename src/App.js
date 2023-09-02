@@ -155,7 +155,7 @@ function App() {
 		},
 		{
 			line: '1',
-			icon: <Icon src='/icons/vscode.png' label='Sony Vegas' />,
+			icon: <Icon src='/icons/vscode.png' label='VS Code' />,
 		},
 	];
 
