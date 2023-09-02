@@ -85,12 +85,12 @@ export const AdrenWorldPage = () => {
 					manage FiveM Servers.
 				</p>
 
-				<p>
+				{/* <p>
 					<a target='_blank' href='https://www.adrensbot.com'>
 						Adrens Bot
 					</a>{' '}
 					- A Multi Purpose Discord Bot
-				</p>
+				</p> */}
 			</div>
 		</div>
 	);
