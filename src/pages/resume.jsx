@@ -10,13 +10,13 @@ const Resume = () => (
 		</Helmet>
 
 		<body data-new-gr-c-s-check-loaded='14.1107.0' data-gr-ext-installed=''>
-			<section class='section'>
-				<div class='container'>
-					<h1 class='title is-1 text-focus-in'>Jacob Schnettler</h1>
-					{/* <h2 class='subtitle is-2 text-focus-in mb-0'>
+			<section className='section'>
+				<div className='container'>
+					<h1 className='title is-1 text-focus-in'>Jacob Schnettler</h1>
+					{/* <h2 className='subtitle is-2 text-focus-in mb-0'>
 						Student &amp; Developer
 					</h2> */}
-					<p class='text-focus-in mb-4'>
+					<p className='text-focus-in mb-4'>
 						Email me at{' '}
 						<strong>
 							<a href='mailto:jacobschnettler12@gmail.com'>
@@ -25,9 +25,9 @@ const Resume = () => (
 						</strong>{' '}
 						to talk to me further about my work.
 					</p>
-					{/* <h2 class='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
-					<p class='text-focus-in2'></p>
-					<ul class='mb-2'>
+					{/* <h2 className='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
+					<p className='text-focus-in2'></p>
+					<ul className='mb-2'>
 						<li>
 							- Student &amp; Developer in High School, currently
 							exporing new technologies and tools
@@ -41,10 +41,32 @@ const Resume = () => (
 					Algebra 2, English, Physics, Spanish, US History, and PE.
 					<p></p> */}
 					<hr />
-					<h2 class='subtitle is-3 text-focus-in3 mb-1'>
+
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
+						Education:
+					</h2>
+					<ul style={{ paddingLeft: '20px' }}>
+						<li>
+							Pocono Mountain East High School – Class of 2024
+						</li>
+						<li>
+							ASVAB Score: 60
+						</li>
+						<li>
+							AP COURSEWORK
+						</li>
+						<li style={{ paddingLeft: '15px' }}>
+							Current: AP Computer Science A, AP Computer Science Principles
+						</li>
+					</ul>
+
+					<hr />
+
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						Certifications:
 					</h2>
-					<ul>
+					<ul style={{ paddingLeft: '20px' }}>
+						<li>- CompTIA A+ Certification</li>
 						<li>
 							-{' '}
 							<a
@@ -55,11 +77,38 @@ const Resume = () => (
 								Professional Rescuers and First Aid
 							</a>
 						</li>
-						<li>- CompTIA A+</li>
+						<li>- Google Cybersecurity Certification</li>
+						<li>- Google Data Analytics</li>
 					</ul>
+
+					<hr />
+
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
+						Interests & Projects:
+					</h2>
+					<div style={{ paddingLeft: '20px' }}>
+						<div>
+							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
+								<h3 className='subtitle is-5 mb-0'>
+									<strong>Breaking Point Software</strong>
+								</h3>
+							</a>
+							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses.</p>
+						</div>
+
+						<div>
+							<a href="https://adren.world" target="_blank" style={{ textDecoration: 'underline' }}>
+								<h3 className='subtitle is-5 mb-0'>
+									<strong>Adren World</strong>
+								</h3>
+							</a>
+							<p style={{ paddingLeft: '20px' }}>Adren World was created too own and manage multiple gaming brands, too date Adren World has over 85k combined users.</p>
+						</div>
+					</div>
+
 					{/* <hr />
-					<h2 class='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
-					<p class='text-focus-in2 mb-2'>
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
+					<p className='text-focus-in2 mb-2'>
 						Here are some skills that help in my growth and
 						progression as a developer.
 					</p>
@@ -75,7 +124,7 @@ const Resume = () => (
 						</li>
 					</ul>
 					<strong>Languages:</strong>
-					<ul class='mb-2'>
+					<ul className='mb-2'>
 						<li>
 							<abbr title='Server-Side JavaScript Executor'>
 								- Node JS
@@ -124,18 +173,18 @@ const Resume = () => (
 						</li>
 					</ul> */}
 					<hr />
-					<h2 class='subtitle is-3 text-focus-in4'>
+					<h2 className='subtitle is-3 text-focus-in4'>
 						Past Work and Experiences:
 					</h2>
-					<div class='columns text-focus-in4 is-multiline '>
-						{/* <div class='column is-half'>
-							<h3 class='subtitle is-5 mb-0'>
+					<div className='text-focus-in4 is-multiline' style={{ paddingLeft: "20px" }}>
+						{/* <div className='column is-half'>
+							<h3 className='subtitle is-5 mb-0'>
 								<strong>Adren World</strong>
 							</h3>
 							<a href='https://snapout.nl/' target='_blank'>
 								Visit our Website
 							</a>
-							<ul class='mt-2'>
+							<ul className='mt-2'>
 								<li>
 									- Team working skills with another
 									developer.
@@ -158,18 +207,28 @@ const Resume = () => (
 							</ul>
 						</div> */}
 
-						<div class='column is-half'>
-							<h3 class='subtitle is-5 mb-0'>
-								<strong>Camelback Resort</strong>
+						<div>
+							<h3 className='subtitle is-5 mb-0'>
+								<strong>Aquatics - Camelback Resort (October 2021 - Present)</strong>
 							</h3>
-							<ul class='mt-2'>
-								<li>- Aquatics Department</li>
-								<li>- Food & Beverage Department</li>
-								<li>- Rentals Department</li>
+							<ul className='mt-2'>
+								<li>- Worked with other employees too maintain safety.</li>
+								<li>- Make sure guests felt welcomed while in the park.</li>
 							</ul>
 						</div>
-						{/* <div class='column is-half'>
-							<h3 class='subtitle is-5 mb-0'>
+
+						<div style={{ paddingTop: '20px' }}>
+							<h3 className='subtitle is-5 mb-0'>
+								<strong>Rentals Dept. - Camelback Resort (2020 - 2021)</strong>
+							</h3>
+							<ul className='mt-2'>
+								<li>- Managed a stock of Snowboards & Snowboard boots, managing handing out & returning</li>
+								<li>- Worked with other employees</li>
+								<li>- Made guests feel welcome</li>
+							</ul>
+						</div>
+						{/* <div className='column is-half'>
+							<h3 className='subtitle is-5 mb-0'>
 								<strong>Snowside Hosting</strong>
 							</h3>
 							<a
@@ -178,7 +237,7 @@ const Resume = () => (
 							>
 								Visit our Website
 							</a>
-							<ul class='mt-2'>
+							<ul className='mt-2'>
 								<li>
 									- Assist cleints with techincal issues they
 									experience
@@ -199,7 +258,7 @@ const Resume = () => (
 						</div> */}
 					</div>
 					{/* <center>
-						<p class='text-focus-in4'>
+						<p className='text-focus-in4'>
 							Copyright © Jacob Schnettler{' '}
 							{new Date().getFullYear()} - All Rights Reserved
 						</p>
