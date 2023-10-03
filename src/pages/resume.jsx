@@ -65,6 +65,7 @@ const Resume = () => (
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						Certifications:
 					</h2>
+					
 					<ul style={{ paddingLeft: '20px' }}>
 						<li>- CompTIA A+ Certification</li>
 						<li>
@@ -84,9 +85,17 @@ const Resume = () => (
 					<hr />
 
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
-						Interests & Projects:
+						Independent Business
 					</h2>
 					<div style={{ paddingLeft: '20px' }}>
+						<div>
+							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
+								<h3 className='subtitle is-5 mb-0'>
+									<strong>AdrenCAD</strong>
+								</h3>
+							</a>
+							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 25k users & Ive been the lead developer & owner of the project.</p>
+						</div>
 						<div>
 							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
 								<h3 className='subtitle is-5 mb-0'>
@@ -94,15 +103,6 @@ const Resume = () => (
 								</h3>
 							</a>
 							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses.</p>
-						</div>
-
-						<div>
-							<a href="https://adren.world" target="_blank" style={{ textDecoration: 'underline' }}>
-								<h3 className='subtitle is-5 mb-0'>
-									<strong>Adren World</strong>
-								</h3>
-							</a>
-							<p style={{ paddingLeft: '20px' }}>Adren World was created too own and manage multiple gaming brands, too date Adren World has over 85k combined users.</p>
 						</div>
 					</div>
 
