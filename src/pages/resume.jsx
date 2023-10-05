@@ -7,6 +7,14 @@ const Resume = () => (
 				rel='stylesheet'
 				href='https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css'
 			/>
+
+			<style>
+				{`
+				a {
+					text-decoration-color: black !important;
+				}
+				`}
+			</style>
 		</Helmet>
 
 		<body data-new-gr-c-s-check-loaded='14.1107.0' data-gr-ext-installed=''>
@@ -65,9 +73,15 @@ const Resume = () => (
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						Certifications:
 					</h2>
-					
+
 					<ul style={{ paddingLeft: '20px' }}>
 						<li>- CompTIA A+ Certification</li>
+						<li>- <a
+								href='/certifications/cybersecurity_foundations.pdf'
+								target='_blank'
+							>Google Foundations of Cybersecurity Certficate
+							</a></li>
+						<li>- Google Data Analytics Certification</li>
 						<li>
 							-{' '}
 							<a
@@ -78,8 +92,6 @@ const Resume = () => (
 								Professional Rescuers and First Aid
 							</a>
 						</li>
-						<li>- Google Cybersecurity Certification</li>
-						<li>- Google Data Analytics</li>
 					</ul>
 
 					<hr />
@@ -88,6 +100,30 @@ const Resume = () => (
 						Independent Business
 					</h2>
 					<div style={{ paddingLeft: '20px' }}>
+						<div>
+							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
+								<h3 className='subtitle is-5 mb-0'>
+									<strong>Breaking Point Software</strong>
+								</h3>
+							</a>
+							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses. The company works with small businesses too optimize their businesses for the web.</p>
+						</div>
+						<div>
+							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
+								<h3 className='subtitle is-5 mb-0'>
+									<strong>AdrenCAD</strong>
+								</h3>
+							</a>
+							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 25k users & Ive been the lead developer & owner of the project.</p>
+						</div>
+					</div>
+
+					<hr />
+
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
+						School Projects
+					</h2>
+					{/* <div style={{ paddingLeft: '20px' }}>
 						<div>
 							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
 								<h3 className='subtitle is-5 mb-0'>
@@ -104,7 +140,7 @@ const Resume = () => (
 							</a>
 							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses.</p>
 						</div>
-					</div>
+					</div> */}
 
 					{/* <hr />
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
@@ -173,43 +209,20 @@ const Resume = () => (
 						</li>
 					</ul> */}
 					<hr />
-					<h2 className='subtitle is-3 text-focus-in4'>
-						Past Work and Experiences:
-					</h2>
-					<div className='text-focus-in4 is-multiline' style={{ paddingLeft: "20px" }}>
-						{/* <div className='column is-half'>
-							<h3 className='subtitle is-5 mb-0'>
-								<strong>Adren World</strong>
-							</h3>
-							<a href='https://snapout.nl/' target='_blank'>
-								Visit our Website
-							</a>
-							<ul className='mt-2'>
-								<li>
-									- Team working skills with another
-									developer.
-								</li>
-								<li>
-									- Learned a new web development technology,
-									Vue JS.
-								</li>
-								<li>
-									- Working around barriers like time zones.
-								</li>
-								<li>
-									- Lots of external research to get the best
-									information on our site.
-								</li>
-								<li>
-									- Gained over 15,000 unique visitors in the
-									first month.
-								</li>
-							</ul>
-						</div> */}
 
+					<h2 className='subtitle is-3 text-focus-in4' style={{ marginBottom: "0", paddingBottom: '0', paddingBottom: '15px' }}>
+						Work Experience:
+					</h2>
+
+					<h2
+						className='subtitle mb-0'
+						style={{ paddingBottom: '10px', fontSize: '24px', paddingLeft: '10px' }}
+					><strong>Camelback Resort (2020 - Present)</strong></h2>
+
+					<div className='text-focus-in4 is-multiline' style={{ paddingLeft: "20px" }}>
 						<div>
 							<h3 className='subtitle is-5 mb-0'>
-								<strong>Aquatics - Camelback Resort (October 2021 - Present)</strong>
+								<strong>Aquatics Dept.</strong>
 							</h3>
 							<ul className='mt-2'>
 								<li>- Worked with other employees too maintain safety.</li>
@@ -219,10 +232,10 @@ const Resume = () => (
 
 						<div style={{ paddingTop: '20px' }}>
 							<h3 className='subtitle is-5 mb-0'>
-								<strong>Rentals Dept. - Camelback Resort (2020 - 2021)</strong>
+								<strong>Rentals Dept.</strong>
 							</h3>
 							<ul className='mt-2'>
-								<li>- Managed a stock of Snowboards & Snowboard boots, managing handing out & returning</li>
+								<li>- Managed inventory including snowboard & ski equipment.</li>
 								<li>- Worked with other employees</li>
 								<li>- Made guests feel welcome</li>
 							</ul>
