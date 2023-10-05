@@ -8,11 +8,11 @@ import {
 } from './pages';
 
 const Projects = [
-	{
-		name: 'Adren World',
-		route: '/adren-world',
-		page: AdrenWorldPage,
-	},
+	// {
+	// 	name: 'Adren World',
+	// 	route: '/adren-world',
+	// 	page: AdrenWorldPage,
+	// },
 	{
 		name: 'Breaking Point Software',
 		route: '/breaking-point',

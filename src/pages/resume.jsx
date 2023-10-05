@@ -79,9 +79,9 @@ const Resume = () => (
 						<li>- <a
 								href='/certifications/cybersecurity_foundations.pdf'
 								target='_blank'
-							>Google Foundations of Cybersecurity Certficate
+							>Google Foundations of Cybersecurity Certificate
 							</a></li>
-						<li>- Google Data Analytics Certification</li>
+						<li>- Google Data Analytics Professional Certificate</li>
 						<li>
 							-{' '}
 							<a
