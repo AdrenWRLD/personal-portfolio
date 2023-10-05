@@ -295,7 +295,7 @@ function App() {
 							paddingTop: '10px',
 						}}
 					>
-						My Stack
+						My Programming Stack
 					</p>
 
 					<div
