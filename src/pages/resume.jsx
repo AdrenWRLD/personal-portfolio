@@ -75,13 +75,17 @@ const Resume = () => (
 					</h2>
 
 					<ul style={{ paddingLeft: '20px' }}>
-						<li>- CompTIA A+ Certification</li>
+						<li>- CompTIA Security+ Certification</li>
 						<li>- <a
-								href='/certifications/cybersecurity_foundations.pdf'
-								target='_blank'
-							>Google Foundations of Cybersecurity Certificate
-							</a></li>
-						<li>- Google Data Analytics Professional Certificate</li>
+							href='/certifications/cybersecurity_foundations.pdf'
+							target='_blank'
+						>Google Foundations of Cybersecurity Certificate
+						</a></li>
+						<li>- <a
+							href='/certifications/cybersecurity_foundations.pdf'
+							target='_blank'
+						>Google Data Analytics Professional Certificate
+						</a></li>
 						<li>
 							-{' '}
 							<a
@@ -103,7 +107,7 @@ const Resume = () => (
 						<div>
 							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
 								<h3 className='subtitle is-5 mb-0'>
-									<strong>Breaking Point Software</strong>
+									<strong>Breaking Point Software - www.breakingpoint.software</strong>
 								</h3>
 							</a>
 							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses. The company works with small businesses too optimize their businesses for the web.</p>
@@ -111,10 +115,10 @@ const Resume = () => (
 						<div>
 							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
 								<h3 className='subtitle is-5 mb-0'>
-									<strong>AdrenCAD</strong>
+									<strong>AdrenCAD - www.adrencad.com</strong>
 								</h3>
 							</a>
-							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 25k users & Ive been the lead developer & owner of the project.</p>
+							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 15k users & Ive been the lead developer & owner of the project.</p>
 						</div>
 					</div>
 
@@ -123,6 +127,27 @@ const Resume = () => (
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						School Projects
 					</h2>
+
+					<h2
+						className='subtitle mb-0'
+						style={{ fontSize: '24px', paddingLeft: '10px' }}
+					><strong>Advanced Java - 2022-2023</strong></h2>
+
+					<ul className='mt-1' style={{ paddingLeft: '15px' }}>
+						{[
+							{ name: 'MC Frogger (Final Project)' },
+							{ name: 'Battleship' },
+							{ name: 'Image Guesser' },
+							{ name: 'Who wants to be a Millionare' },
+							{ name: 'Hangman' },
+							{ name: 'NIM 753' },
+							{ name: 'Battleship' },
+							{ name: 'Number Time' },
+							{ name: 'NFL Team Picker' },
+							{ name: 'Dice Bet' },
+							{ name: 'Pizza Picker' }
+						].map((item => <li>- {item.name}</li>))}
+					</ul>
 					{/* <div style={{ paddingLeft: '20px' }}>
 						<div>
 							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
@@ -276,6 +301,8 @@ const Resume = () => (
 							{new Date().getFullYear()} - All Rights Reserved
 						</p>
 					</center> */}
+
+					<p style={{ paddingTop: '35px', fontSize: '18px' }}>jschnettler.com/resume</p>
 				</div>
 			</section>
 		</body>

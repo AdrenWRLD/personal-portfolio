@@ -32,6 +32,13 @@ export const BPSoftwarePage = () => {
 				Breaking Point Software is a technology consulting company
 				created too manage local businesses.
 			</p>
+
+			<p style={{
+				fontSize: '24px',
+				width: isMobile ? '80%' : '45vw',
+				margin: 'auto',
+				paddingTop: '25px'
+			}}>For any business related inquries, please email me at <a target='_blank	' href='mailto:jacob@breakingpoint.software'>jacob@breakingpoint.software</a></p>
 		</div>
 	);
 };

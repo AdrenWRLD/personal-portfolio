@@ -178,8 +178,50 @@ export const AdvancedJavaPage = () => {
 						</a>
 					</div>
 
-					<div className='row' style={{ marginBottom: '15px' }}>
-						<div className='col-md-8' />
+					<div className='row' style={{ marginBottom: '15px', paddingTop: '25px' }}>
+						<div
+							className='col-md-8'
+						>
+							<div>
+								<iframe
+									width='100%'
+									height='420px'
+									src={SelectedProject.youtube}
+									title='YouTube video player'
+									frameborder='0'
+									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+									allowfullscreen={true}
+								></iframe>
+
+								<h1 className='h2' style={{ paddingTop: '15px' }}>
+									Description:
+								</h1>
+
+								<p>
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Error maxime nemo corporis
+									dolore facilis optio. Praesentium, repellendus
+									sed natus, pariatur ipsa ratione est ut,
+									consequatur ea voluptatem molestiae cupiditate
+									officiis? Lorem ipsum dolor sit, amet
+									consectetur adipisicing elit. Error maxime nemo
+									corporis dolore facilis optio. Praesentium,
+									repellendus sed natus, pariatur ipsa ratione est
+									ut, consequatur ea voluptatem molestiae
+									cupiditate officiis? Lorem ipsum dolor sit, amet
+									consectetur adipisicing elit. Error maxime nemo
+									corporis dolore facilis optio. Praesentium,
+									repellendus sed natus, pariatur ipsa ratione est
+									ut, consequatur ea voluptatem molestiae
+									cupiditate officiis? Lorem ipsum dolor sit, amet
+									consectetur adipisicing elit. Error maxime nemo
+									corporis dolore facilis optio. Praesentium,
+									repellendus sed natus, pariatur ipsa ratione est
+									ut, consequatur ea voluptatem molestiae
+									cupiditate officiis?
+								</p>
+							</div>
+						</div>
 
 						<div className='col-md-4 text-center'>
 							<a
@@ -195,25 +237,7 @@ export const AdvancedJavaPage = () => {
 							>
 								<i className='fas fa-arrow-up'></i>
 							</a>
-						</div>
-					</div>
 
-					<div className='row'>
-						<div
-							className='col-md-8'
-							style={{ minHeight: '420px' }}
-						>
-							<iframe
-								width='100%'
-								height='100%'
-								src={SelectedProject.youtube}
-								title='YouTube video player'
-								frameborder='0'
-								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-								allowfullscreen
-							></iframe>
-						</div>
-						<div className='col-md-4'>
 							{[
 								SelectedProject.previews[MediaIndex]
 									? SelectedProject.previews[MediaIndex]
@@ -237,48 +261,14 @@ export const AdvancedJavaPage = () => {
 									/>
 								);
 							})}
-						</div>
-					</div>
 
-					<div className='row' style={{ marginTop: '15px' }}>
-						<div className='col-md-8'>
-							<h1 className='h2' style={{ paddingTop: '15px' }}>
-								Description:
-							</h1>
-
-							<p>
-								Lorem ipsum dolor sit, amet consectetur
-								adipisicing elit. Error maxime nemo corporis
-								dolore facilis optio. Praesentium, repellendus
-								sed natus, pariatur ipsa ratione est ut,
-								consequatur ea voluptatem molestiae cupiditate
-								officiis? Lorem ipsum dolor sit, amet
-								consectetur adipisicing elit. Error maxime nemo
-								corporis dolore facilis optio. Praesentium,
-								repellendus sed natus, pariatur ipsa ratione est
-								ut, consequatur ea voluptatem molestiae
-								cupiditate officiis? Lorem ipsum dolor sit, amet
-								consectetur adipisicing elit. Error maxime nemo
-								corporis dolore facilis optio. Praesentium,
-								repellendus sed natus, pariatur ipsa ratione est
-								ut, consequatur ea voluptatem molestiae
-								cupiditate officiis? Lorem ipsum dolor sit, amet
-								consectetur adipisicing elit. Error maxime nemo
-								corporis dolore facilis optio. Praesentium,
-								repellendus sed natus, pariatur ipsa ratione est
-								ut, consequatur ea voluptatem molestiae
-								cupiditate officiis?
-							</p>
-						</div>
-
-						<div className='col-md-4 text-center'>
 							<a
 								href='#'
 								style={{
 									fontSize: '30px',
 									color:
 										MediaIndex + 1 ==
-										SelectedProject.previews.length - 1
+											SelectedProject.previews.length - 1
 											? 'black'
 											: null,
 								}}
