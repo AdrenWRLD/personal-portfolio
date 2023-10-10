@@ -75,16 +75,16 @@ const Resume = () => (
 					</h2>
 
 					<ul style={{ paddingLeft: '20px' }}>
-						<li>- CompTIA Security+ Certification</li>
+						{/* <li>- CompTIA Security+ Certification</li> */}
 						<li>- <a
 							href='/certifications/cybersecurity_foundations.pdf'
 							target='_blank'
 						>Google Foundations of Cybersecurity Certificate
 						</a></li>
 						<li>- <a
-							href='/certifications/cybersecurity_foundations.pdf'
+							href='/certifications/data_analytics.pdf'
 							target='_blank'
-						>Google Data Analytics Professional Certificate
+						>Google Data Analytics Certificate
 						</a></li>
 						<li>
 							-{' '}
