@@ -83,7 +83,7 @@ const Resume = () => (
 						<li>- <a
 							href='/certifications/data_analytics.pdf'
 							target='_blank'
-						>Google Data Analytics Certificate
+						>Google Foundations of Data Analytics Certificate
 						</a></li>
 						<li>
 							-{' '}
