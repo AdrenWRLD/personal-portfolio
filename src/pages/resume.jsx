@@ -25,13 +25,12 @@ const Resume = () => (
 						Student &amp; Developer
 					</h2> */}
 					<p className='text-focus-in mb-4'>
-						Email me at{' '}
+						Email: {' '}
 						<strong>
 							<a href='mailto:jacobschnettler12@gmail.com'>
 								jacobschnettler12@gmail.com
 							</a>
-						</strong>{' '}
-						to talk to me further about my work.
+						</strong>
 					</p>
 					{/* <h2 className='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
 					<p className='text-focus-in2'></p>
