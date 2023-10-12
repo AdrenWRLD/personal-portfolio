@@ -32,21 +32,7 @@ const Resume = () => (
 							</a>
 						</strong>
 					</p>
-					{/* <h2 className='subtitle is-3 text-focus-in2 mb-1'>About Me:</h2>
-					<p className='text-focus-in2'></p>
-					<ul className='mb-2'>
-						<li>
-							- Student &amp; Developer in High School, currently
-							exporing new technologies and tools
-						</li>
-						<li>- Full-Stack Developer for 3 years</li>
-						<li>- Passionate about nature &amp; outdoors</li>
-					</ul>
-					<strong>Current Education: </strong>Enrolled at Pocono
-					Mountain East HS
-					<br />
-					Algebra 2, English, Physics, Spanish, US History, and PE.
-					<p></p> */}
+
 					<hr />
 
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
@@ -100,6 +86,26 @@ const Resume = () => (
 					<hr />
 
 					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
+						Recommendation Letters:
+					</h2>
+
+					<ul style={{ paddingLeft: '20px' }}>
+						{/* <li>- CompTIA Security+ Certification</li> */}
+						<li>- <a
+							href='/letters/luciano_recommendation.pdf'
+							target='_blank'
+						>Robert Luciano - PMSD Computer Science Teacher
+						</a></li>
+						<li>- <a
+							href='/certifications/data_analytics.pdf'
+							target='_blank'
+						>Richard Ludka - PMSD Swimming & PhysEd Teacher
+						</a></li>
+					</ul>
+
+					<hr />
+
+					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						Independent Business
 					</h2>
 					<div style={{ paddingLeft: '20px' }}>
@@ -147,91 +153,7 @@ const Resume = () => (
 							{ name: 'Pizza Picker' }
 						].map((item => <li>- {item.name}</li>))}
 					</ul>
-					{/* <div style={{ paddingLeft: '20px' }}>
-						<div>
-							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
-								<h3 className='subtitle is-5 mb-0'>
-									<strong>AdrenCAD</strong>
-								</h3>
-							</a>
-							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 25k users & Ive been the lead developer & owner of the project.</p>
-						</div>
-						<div>
-							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
-								<h3 className='subtitle is-5 mb-0'>
-									<strong>Breaking Point Software</strong>
-								</h3>
-							</a>
-							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses.</p>
-						</div>
-					</div> */}
 
-					{/* <hr />
-					<h2 className='subtitle is-3 text-focus-in3 mb-1'>Skills:</h2>
-					<p className='text-focus-in2 mb-2'>
-						Here are some skills that help in my growth and
-						progression as a developer.
-					</p>
-					<strong>Personality Traits:</strong>
-					<ul>
-						<li>
-							- Willing to work with others even during difficult
-							times or situations.
-						</li>
-						<li>- Always interested in learning new skills.</li>
-						<li>
-							- Passionate in teaching others skills I've learned.
-						</li>
-					</ul>
-					<strong>Languages:</strong>
-					<ul className='mb-2'>
-						<li>
-							<abbr title='Server-Side JavaScript Executor'>
-								- Node JS
-							</abbr>
-						</li>
-						<li>
-							<abbr title='Hyper Text Markup Language/Cascading Style Sheets'>
-								- HTML/CSS
-							</abbr>
-						</li>
-						<li>
-							<abbr title='TypeScript'>- TypeScript</abbr>
-						</li>
-						<li>
-							<abbr title='JavaScript'>- JavaScript</abbr>
-						</li>
-						<li>
-							<abbr title='Vue JS'>- Vue JS</abbr>
-						</li>
-						<li>
-							<abbr title='Structured Query Language'>
-								- MySQL
-							</abbr>
-						</li>
-					</ul>
-					<strong>Tools:</strong>
-					<ul>
-						<li>
-							- Fluent in other tools such as{' '}
-							<a
-								href='https://workspace.google.com/'
-								target='_blank'
-							>
-								G-Suite
-							</a>{' '}
-							which includes Google Docs, Slids, Sheets, Forms,
-							ect.
-						</li>
-						<li>
-							- Proficient at troubleshooting problems and finding
-							a solution when it comes to Technology.
-						</li>
-						<li>
-							- Also have have some experience with Cisco Meraki
-							and their networking solutions.
-						</li>
-					</ul> */}
 					<hr />
 
 					<h2 className='subtitle is-3 text-focus-in4' style={{ marginBottom: "0", paddingBottom: '0', paddingBottom: '15px' }}>
@@ -264,42 +186,7 @@ const Resume = () => (
 								<li>- Made guests feel welcome</li>
 							</ul>
 						</div>
-						{/* <div className='column is-half'>
-							<h3 className='subtitle is-5 mb-0'>
-								<strong>Snowside Hosting</strong>
-							</h3>
-							<a
-								href='https://snowsidehosting.com/'
-								target='_blank'
-							>
-								Visit our Website
-							</a>
-							<ul className='mt-2'>
-								<li>
-									- Assist cleints with techincal issues they
-									experience
-								</li>
-								<li>
-									- Answer client questions about billing,
-									tech, ect.
-								</li>
-								<li>
-									- Maintain a professional manner and uphold
-									the company's image.
-								</li>
-								<li>
-									- Hundreds of happy customers and steady
-									monthly growth.
-								</li>
-							</ul>
-						</div> */}
 					</div>
-					{/* <center>
-						<p className='text-focus-in4'>
-							Copyright © Jacob Schnettler{' '}
-							{new Date().getFullYear()} - All Rights Reserved
-						</p>
-					</center> */}
 
 					<p style={{ paddingTop: '35px', fontSize: '18px' }}>jschnettler.com/resume</p>
 				</div>
