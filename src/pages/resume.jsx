@@ -111,7 +111,7 @@ const Resume = () => (
 						<div>
 							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'none' }}>
 								<h3 className='subtitle is-5 mb-0'>
-									<strong>Breaking Point Software - www.breakingpoint.software</strong>
+									<strong>Breaking Point Software{/*- www.breakingpoint.software*/}</strong>
 								</h3>
 							</a>
 							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses. The company works with small businesses too optimize their businesses for the web.</p>
@@ -119,7 +119,7 @@ const Resume = () => (
 						<div>
 							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'none' }}>
 								<h3 className='subtitle is-5 mb-0'>
-									<strong>AdrenCAD - www.adrencad.com</strong>
+									<strong>AdrenCAD{/*- www.adrencad.com*/}</strong>
 								</h3>
 							</a>
 							<p style={{ paddingLeft: '20px' }}>AdrenCAD is a company that makes mock police computer aided dispatching software for Grand Theft Auto Five roleplaying servers. To date it has over 15k users & Ive been the lead developer & owner of the project.</p>
