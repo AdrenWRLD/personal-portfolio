@@ -77,8 +77,7 @@ const Resume = () => (
 								href='/certifications/red_cross.pdf'
 								target='_blank'
 							>
-								Red Cross Lifeguarding with CPR/AED for
-								Professional Rescuers and First Aid
+								Red Cross Lifeguarding with CPR/AED and First Aid
 							</a>
 						</li>
 					</ul>
@@ -110,7 +109,7 @@ const Resume = () => (
 					</h2>
 					<div style={{ paddingLeft: '20px' }}>
 						<div>
-							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'underline' }}>
+							<a href="https://breakingpoint.software" target="_blank" style={{ textDecoration: 'none' }}>
 								<h3 className='subtitle is-5 mb-0'>
 									<strong>Breaking Point Software - www.breakingpoint.software</strong>
 								</h3>
@@ -118,7 +117,7 @@ const Resume = () => (
 							<p style={{ paddingLeft: '20px' }}>Breaking Point Software was created too help create websites & software for local businesses. The company works with small businesses too optimize their businesses for the web.</p>
 						</div>
 						<div>
-							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'underline' }}>
+							<a href="https://adrencad.com" target="_blank" style={{ textDecoration: 'none' }}>
 								<h3 className='subtitle is-5 mb-0'>
 									<strong>AdrenCAD - www.adrencad.com</strong>
 								</h3>
@@ -129,7 +128,7 @@ const Resume = () => (
 
 					<hr />
 
-					<h2 className='subtitle is-3 text-focus-in3 mb-1'>
+					{/* <h2 className='subtitle is-3 text-focus-in3 mb-1'>
 						School Projects
 					</h2>
 
@@ -154,7 +153,7 @@ const Resume = () => (
 						].map((item => <li>- {item.name}</li>))}
 					</ul>
 
-					<hr />
+					<hr /> */}
 
 					<h2 className='subtitle is-3 text-focus-in4' style={{ marginBottom: "0", paddingBottom: '0', paddingBottom: '15px' }}>
 						Work Experience:
