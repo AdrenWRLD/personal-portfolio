@@ -97,7 +97,7 @@ const Resume = () => (
 						>Robert Luciano - PMSD Computer Science Teacher
 						</a></li>
 						<li>- <a
-							href='/certifications/data_analytics.pdf'
+							href='/letters/ludka_recommendation.pdf'
 							target='_blank'
 						>Richard Ludka - PMSD Swimming & PhysEd Teacher
 						</a></li>
