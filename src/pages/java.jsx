@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button, Card, Container, Spinner, Modal } from 'react-bootstrap';
+import { Button, Card, Container, Spinner, Modal, Badge } from 'react-bootstrap';
 
 const RepoSourcesModal = ({ show, setShow, files }) => {
 	const handleClose = () => setShow(false);
@@ -147,28 +147,8 @@ export const AdvancedJavaPage = () => {
 									Description:
 								</h1>
 
-								<p>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Error maxime nemo corporis
-									dolore facilis optio. Praesentium, repellendus
-									sed natus, pariatur ipsa ratione est ut,
-									consequatur ea voluptatem molestiae cupiditate
-									officiis? Lorem ipsum dolor sit, amet
-									consectetur adipisicing elit. Error maxime nemo
-									corporis dolore facilis optio. Praesentium,
-									repellendus sed natus, pariatur ipsa ratione est
-									ut, consequatur ea voluptatem molestiae
-									cupiditate officiis? Lorem ipsum dolor sit, amet
-									consectetur adipisicing elit. Error maxime nemo
-									corporis dolore facilis optio. Praesentium,
-									repellendus sed natus, pariatur ipsa ratione est
-									ut, consequatur ea voluptatem molestiae
-									cupiditate officiis? Lorem ipsum dolor sit, amet
-									consectetur adipisicing elit. Error maxime nemo
-									corporis dolore facilis optio. Praesentium,
-									repellendus sed natus, pariatur ipsa ratione est
-									ut, consequatur ea voluptatem molestiae
-									cupiditate officiis?
+								<p style={{ fontSize: '20px' }}>
+									{SelectedProject && SelectedProject.description ? SelectedProject.description : "No Description Set."}
 								</p>
 							</div>
 						</div>
@@ -272,9 +252,7 @@ export const AdvancedJavaPage = () => {
 								)
 							)}
 
-							<hr />
-
-							{SelectedProject.grade || "95%" &&
+							{SelectedProject.grade &&
 								<Card body style={{ marginTop: '25px' }}>
 									<Card.Title
 										style={{
@@ -285,7 +263,7 @@ export const AdvancedJavaPage = () => {
 										Final Grade
 									</Card.Title>
 
-									<Card.Title>95%</Card.Title>
+									<Card.Title>{SelectedProject.grade}</Card.Title>
 								</Card>}
 						</div>
 					</div>
@@ -311,6 +289,12 @@ export const AdvancedJavaPage = () => {
 											project.id
 										}
 									>
+										{project.grade &&
+											<div style={{ position: 'absolute', zIndex: '600', left: '15px', right: '15px' }}>
+												<h1 className='h5'><Badge>Graded</Badge></h1>
+											</div>
+										}
+
 										<Card.Img
 											src={project.previews[0]}
 											style={{ cursor: 'pointer' }}
