@@ -195,9 +195,9 @@ export const AdvancedJavaPage = () => {
 								SelectedProject.previews[MediaIndex + 1]
 									? SelectedProject.previews[MediaIndex + 1]
 									: null,
-							].map((image, index) => {
+							].map((image, i) => {
 								return (
-									<a href={image} target="_blank" style={{ paddingBottom: index == 0 ? '15px' : null }}>
+									<a href={image} target="_blank">
 										<img
 											// onClick={() => {
 											// 	setSelectedImage(image);
@@ -208,6 +208,7 @@ export const AdvancedJavaPage = () => {
 											style={{
 												width: '100%',
 												cursor: 'pointer',
+												marginBottom: i == 0 ? '15px' : null
 											}}
 										/>
 									</a>
@@ -270,6 +271,22 @@ export const AdvancedJavaPage = () => {
 									</Button>
 								)
 							)}
+
+							<hr />
+
+							{SelectedProject.grade || "95%" &&
+								<Card body style={{ marginTop: '25px' }}>
+									<Card.Title
+										style={{
+											paddingTop: '15px',
+											fontWeight: '700',
+										}}
+									>
+										Final Grade
+									</Card.Title>
+
+									<Card.Title>95%</Card.Title>
+								</Card>}
 						</div>
 					</div>
 				</Container>
