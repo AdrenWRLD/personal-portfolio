@@ -113,56 +113,6 @@ export const AdvancedJavaPage = () => {
 				/>
 			)}
 
-			{ShowFullScreenImg && SelectedImage && (
-				<div
-					style={{
-						position: 'absolute',
-						zIndex: '900',
-						top: '0',
-						left: '0',
-						width: '100vw',
-						height: '100vh',
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-					}}
-				>
-					<div
-						style={{
-							backgroundColor: 'rgba(0, 0, 0, 0.9)',
-						}}
-					>
-						<div
-							style={{
-								height: '100%',
-								padding: '45px',
-								display: 'flex',
-								alignItems: 'center',
-								justifyContent: 'center',
-							}}
-						>
-							<div>
-								<a
-									href='#'
-									onClick={() => setShowFullScreenImg(false)}
-									style={{
-										position: 'absolute',
-										zIndex: '100',
-										padding: '25px',
-										color: '#eee',
-										fontSize: '45px',
-									}}
-								>
-									X
-								</a>
-
-								<img src={SelectedImage} />
-							</div>
-						</div>
-					</div>
-				</div>
-			)}
-
 			{SelectedProject ? (
 				<Container
 					style={{ paddingTop: '30px', paddingBottom: '30px' }}
@@ -245,20 +195,22 @@ export const AdvancedJavaPage = () => {
 								SelectedProject.previews[MediaIndex + 1]
 									? SelectedProject.previews[MediaIndex + 1]
 									: null,
-							].map((image) => {
+							].map((image, index) => {
 								return (
-									<img
-										onClick={() => {
-											setSelectedImage(image);
+									<a href={src} target="_blank" style={{ paddingBottom: index == 0 ? '15px' : null }}>
+										<img
+											// onClick={() => {
+											// 	setSelectedImage(image);
 
-											setShowFullScreenImg(true);
-										}}
-										src={image}
-										style={{
-											width: '100%',
-											cursor: 'pointer',
-										}}
-									/>
+											// 	setShowFullScreenImg(true);
+											// }}
+											src={image}
+											style={{
+												width: '100%',
+												cursor: 'pointer',
+											}}
+										/>
+									</a>
 								);
 							})}
 
@@ -314,7 +266,7 @@ export const AdvancedJavaPage = () => {
 										target='_blank'
 										href={SelectedProject.repo}
 									>
-										Github Repository
+										Project Files
 									</Button>
 								)
 							)}

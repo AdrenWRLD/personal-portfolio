@@ -24,7 +24,7 @@ const Projects = [
 	// 	page: CoursesPage,
 	// },
 	{
-		name: 'Advanced Java',
+		name: 'Advanced Java Course Files',
 		route: '/advanced-java',
 		page: AdvancedJavaPage,
 	},
