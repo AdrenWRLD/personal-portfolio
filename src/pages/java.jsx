@@ -197,7 +197,7 @@ export const AdvancedJavaPage = () => {
 									: null,
 							].map((image, index) => {
 								return (
-									<a href={src} target="_blank" style={{ paddingBottom: index == 0 ? '15px' : null }}>
+									<a href={image} target="_blank" style={{ paddingBottom: index == 0 ? '15px' : null }}>
 										<img
 											// onClick={() => {
 											// 	setSelectedImage(image);
