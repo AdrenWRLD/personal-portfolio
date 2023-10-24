@@ -43,7 +43,8 @@ const Resume = () => (
 							Pocono Mountain East High School – Class of 2024
 						</li>
 						<li>
-							ASVAB Score: 60
+							<a href='/testing/asvab_results.pdf'
+								target='_blank'>ASVAB Score: 62</a>
 						</li>
 						<li>
 							AP COURSEWORK
