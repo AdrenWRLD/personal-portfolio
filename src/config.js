@@ -5,6 +5,7 @@ import {
 	SecuritySystemPage,
 	BPSoftwarePage,
 	CoursesPage,
+	APComputerSciencePage,
 } from './pages';
 
 const Projects = [
@@ -27,6 +28,11 @@ const Projects = [
 		name: 'Advanced Java Course Files',
 		route: '/advanced-java',
 		page: AdvancedJavaPage,
+	},
+	{
+		name: 'AP Computer Science Course Files',
+		route: '/ap-computer-science',
+		page: APComputerSciencePage,
 	},
 	// {
 	// 	name: 'Items Tracker',
