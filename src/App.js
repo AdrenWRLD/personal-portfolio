@@ -396,7 +396,47 @@ function App() {
 							padding: '0',
 						}}
 					>
-						Projects
+						Personal Projects
+					</p>
+
+					<div
+						style={{
+							width: buttomWidth,
+							paddingTop: '15px',
+							paddingBottom: '15px',
+							margin: 'auto',
+						}}
+					>
+						{Config.projects.map((project) => (
+							<a
+								className='btn btn-primary'
+								href={'/projects' + project.route}
+								style={{
+									width: '100%',
+									marginBottom: '10px',
+									fontWeight: '700',
+								}}
+							>
+								{project.name}
+							</a>
+						))}
+					</div>
+				</div>
+
+				<div
+					className='text-center'
+					style={{ width: '100%' }}
+				>
+					<p
+						className='text-center'
+						style={{
+							fontWeight: '700',
+							fontSize: '20px',
+							margin: '0',
+							padding: '0',
+						}}
+					>
+						Highschool Course Work
 					</p>
 
 					<div
@@ -407,7 +447,7 @@ function App() {
 							margin: 'auto',
 						}}
 					>
-						{Config.projects.map((project) => (
+						{Config.hs_projects.map((project) => (
 							<a
 								className='btn btn-primary'
 								href={'/projects' + project.route}

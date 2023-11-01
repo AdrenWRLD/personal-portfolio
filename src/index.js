@@ -36,9 +36,11 @@ root.render(
 			<Routes>
 				<Route path='/' element={<App />} />
 
+				{/* <Route path='/resume.pdf' element={<div><h1>resume.pdf</h1></div>} exact /> */}
+
 				<Route path='/resume' element={<Resume />} />
 
-				{Config.projects.map((project) => (
+				{[...Config.projects, ...Config.hs_projects].map((project) => (
 					<Route
 						path={'/projects' + project.route}
 						element={<project.page />}

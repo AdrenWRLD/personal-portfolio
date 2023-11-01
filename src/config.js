@@ -6,6 +6,7 @@ import {
 	BPSoftwarePage,
 	CoursesPage,
 	APComputerSciencePage,
+	APComputerSciencePrincipalsPage,
 } from './pages';
 
 const Projects = [
@@ -24,16 +25,6 @@ const Projects = [
 	// 	route: '/coding-tutorials',
 	// 	page: CoursesPage,
 	// },
-	{
-		name: 'Advanced Java Course Files',
-		route: '/advanced-java',
-		page: AdvancedJavaPage,
-	},
-	{
-		name: 'AP Computer Science Course Files',
-		route: '/ap-computer-science',
-		page: APComputerSciencePage,
-	},
 	// {
 	// 	name: 'Items Tracker',
 	// 	route: '/items-tracker',
@@ -46,12 +37,31 @@ const Projects = [
 	},
 ];
 
+const HSProjects = [
+	{
+		name: 'AP CSA 2023-2024',
+		route: '/ap-computer-science-a',
+		page: APComputerSciencePage,
+	},
+	{
+		name: 'AP CSP 2023-2024',
+		route: '/ap-computer-science-principals',
+		page: APComputerSciencePrincipalsPage,
+	},
+	{
+		name: 'Advanced Java 2022-2023',
+		route: '/advanced-java',
+		page: AdvancedJavaPage,
+	},
+];
+
 export const Config = {
 	avatar: '/picture2.jpg',
 	email: 'jacobschnettler13@gmail.com',
 	github: 'https://github.com/jacobschnettler',
 	youtube: 'https://www.youtube.com/@jschnettler_',
 	projects: Projects,
+	hs_projects: HSProjects,
 	quote: () => (
 		<span style={{ fontSize: '22px', fontStyle: 'italic' }}>
 			'“It is hard to fail, but it is worse never to have tried to

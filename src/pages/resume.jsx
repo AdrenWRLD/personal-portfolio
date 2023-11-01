@@ -1,5 +1,7 @@
 import { Helmet } from 'react-helmet';
 
+import { isMobile } from 'react-device-detect';
+
 const Resume = () => (
 	<div>
 		<Helmet>
@@ -20,7 +22,11 @@ const Resume = () => (
 		<body data-new-gr-c-s-check-loaded='14.1107.0' data-gr-ext-installed=''>
 			<section className='section'>
 				<div className='container'>
-					<h1 className='title is-1 text-focus-in' style={{ paddingBottom: '25px' }}>Jacob Schnettler</h1>
+					<div style={{ display: 'flex', alignItems: 'center', paddingBottom: '25px' }}>
+						<img src='/picture2.jpg' style={{ borderRadius: '100%', height: isMobile ? '75px' : null }} />
+
+						<h1 className='title is-1 text-focus-in' style={{ marginLeft: '15px', fontSize: "30px" }}>Jacob Schnettler</h1>
+					</div>
 					{/* <h2 className='subtitle is-2 text-focus-in mb-0'>
 						Student &amp; Developer
 					</h2> */}

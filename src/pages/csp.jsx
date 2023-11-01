@@ -54,7 +54,7 @@ const RepoSourcesModal = ({ show, setShow, files }) => {
 	);
 };
 
-export const APComputerSciencePage = () => {
+export const APComputerSciencePrincipalsPage = () => {
 	const [Projects, setProjects] = useState(null);
 
 	const [Fetching, setFetching] = useState(true);
@@ -121,7 +121,7 @@ export const APComputerSciencePage = () => {
 						<h1 className='h2'>{SelectedProject.label}</h1>
 
 						<a
-							href='/projects/ap-computer-science-a'
+							href='/projects/advanced-java'
 							style={{ paddingLeft: '25px' }}
 						>
 							Other Projects
@@ -272,7 +272,7 @@ export const APComputerSciencePage = () => {
 				<Container
 					style={{ paddingTop: '30px', paddingBottom: '30px' }}
 				>
-					<h1 className='h2'>AP Computer Science A Course Files</h1>
+					<h1 className='h2'>AP Computer Science Principals Course Files</h1>
 
 					<p>Course Files</p>
 
@@ -285,7 +285,7 @@ export const APComputerSciencePage = () => {
 								<Card body>
 									{/* <a
 										href={
-											'/projects/ap-computer-science-a?project=' +
+											'/projects/advanced-java?project=' +
 											project.id
 										}
 									>
@@ -303,18 +303,18 @@ export const APComputerSciencePage = () => {
 
 									<Card.Title
 										style={{
-											// paddingTop: '15px',
+											paddingTop: '15px',
 											fontWeight: '700',
 										}}
 									>
 										{project.label}
 									</Card.Title>
 
-									{/* <hr /> */}
+									<hr />
 
 									<a
 										href={
-											'/projects/ap-computer-science-a?project=' +
+											'/projects/advanced-java?project=' +
 											project.id
 										}
 									>
