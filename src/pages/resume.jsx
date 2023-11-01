@@ -25,7 +25,7 @@ const Resume = () => (
 					<div style={{ display: 'flex', alignItems: 'center', paddingBottom: '25px' }}>
 						<img src='/picture2.jpg' style={{ borderRadius: '100%', height: isMobile ? '75px' : null }} />
 
-						<h1 className='title is-1 text-focus-in' style={{ marginLeft: '15px', fontSize: "30px" }}>Jacob Schnettler</h1>
+						<h1 className='title is-1 text-focus-in' style={{ marginLeft: '15px', fontSize: isMobile ? "30px" : null }}>Jacob Schnettler</h1>
 					</div>
 					{/* <h2 className='subtitle is-2 text-focus-in mb-0'>
 						Student &amp; Developer
