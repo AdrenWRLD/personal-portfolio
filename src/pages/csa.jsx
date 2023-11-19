@@ -272,7 +272,7 @@ export const APComputerSciencePage = () => {
 				<Container
 					style={{ paddingTop: '30px', paddingBottom: '30px' }}
 				>
-					<h1 className='h2'>AP Computer Science A Course Files</h1>
+					<h1 className='h2'>AP Computer Science A</h1>
 
 					<p style={{ paddingTop: '15px', fontSize: '22px' }}>Course Files</p>
 
