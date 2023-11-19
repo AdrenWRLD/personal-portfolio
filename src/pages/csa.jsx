@@ -75,7 +75,7 @@ export const APComputerSciencePage = () => {
 		setFetching(true);
 
 		fetch(
-			'https://raw.githubusercontent.com/jacobschnettler/ap-csp/main/projects.json'
+			'https://raw.githubusercontent.com/jacobschnettler/ap-csa/main/projects.json'
 		)
 			.then((response) => response.json())
 			.then((data) => {
@@ -83,14 +83,14 @@ export const APComputerSciencePage = () => {
 
 				setProjects(projects);
 
-				let params = new URL(document.location).searchParams;
+				// let params = new URL(document.location).searchParams;
 
-				let project = params.get('project');
+				// let project = params.get('project');
 
-				if (project)
-					projects.forEach((p) => {
-						if (p.id == project) setSelectedProject(p);
-					});
+				// if (project)
+				// 	projects.forEach((p) => {
+				// 		if (p.id == project) setSelectedProject(p);
+				// 	});
 
 				setFetching(false);
 			})
@@ -274,97 +274,28 @@ export const APComputerSciencePage = () => {
 				>
 					<h1 className='h2'>AP Computer Science A Course Files</h1>
 
-					<p>Course Files</p>
+					<p style={{ paddingTop: '15px', fontSize: '22px' }}>Course Files</p>
 
-					<div className='row'>
-						{Projects.map((project) => (
-							<div
-								className='col-md-4'
-								style={{ marginBottom: '20px' }}
-							>
-								<Card body>
-									{/* <a
-										href={
-											'/projects/ap-computer-science-a?project=' +
-											project.id
-										}
-									>
-										{project.grade &&
-											<div style={{ position: 'absolute', zIndex: '600', left: '15px', right: '15px' }}>
-												<h1 className='h5'><Badge>Graded</Badge></h1>
-											</div>
-										}
-
-										<Card.Img
-											src={project.previews[0]}
-											style={{ cursor: 'pointer' }}
-										/>
-									</a> */}
-
-									<Card.Title
-										style={{
-											// paddingTop: '15px',
-											fontWeight: '700',
-										}}
-									>
-										{project.label}
-									</Card.Title>
-
-									{/* <hr /> */}
-
-									<a
-										href={
-											'/projects/ap-computer-science-a?project=' +
-											project.id
-										}
-									>
-										<Button
-											style={{
-												marginTop: '10px',
-												width: '100%',
-												fontWeight: '700',
-												marginBottom: '10px',
-											}}
+					<div style={{ paddingLeft: '10px' }}>
+						<ul>
+							{Projects.map((project) => (
+								<div
+								// style={{ marginBottom: '20px' }}
+								>
+									<li>
+										<a
+											target={'_blank'}
+											href={
+												project.src
+											}
 										>
-											View Files
-										</Button>
-									</a>
 
-									{project.repoSources ? (
-										<Button
-											style={{
-												width: '100%',
-												fontWeight: '700',
-											}}
-											variant='secondary'
-											onClick={() => {
-												setProjectFiles(
-													project.repoSources
-												);
-
-												setShowProjectFilesModal(true);
-											}}
-										>
-											Project Files
-										</Button>
-									) : (
-										project.repo && (
-											<Button
-												style={{
-													width: '100%',
-													fontWeight: '700',
-												}}
-												variant='secondary'
-												target='_blank'
-												href={project.repo}
-											>
-												Github Repository
-											</Button>
-										)
-									)}
-								</Card>
-							</div>
-						))}
+											{project.label}
+										</a>
+									</li>
+								</div>
+							))}
+						</ul>
 					</div>
 				</Container>
 			)}
