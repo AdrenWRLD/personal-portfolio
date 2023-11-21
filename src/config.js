@@ -64,7 +64,7 @@ export const Config = {
 	hs_projects: HSProjects,
 	quote: () => (
 		<span style={{ fontSize: '22px', fontStyle: 'italic' }}>
-			'“It is hard to fail, but it is worse never to have tried to
+			“It is hard to fail, but it is worse never to have tried to
 			succeed.”
 			<br /> – Theodore Roosevelt
 			<br />

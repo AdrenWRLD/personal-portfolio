@@ -81,6 +81,8 @@ export const APComputerSciencePage = () => {
 			.then((data) => {
 				const projects = data;
 
+				alert(JSON.stringify(data));
+
 				setProjects(projects);
 
 				// let params = new URL(document.location).searchParams;
@@ -96,6 +98,8 @@ export const APComputerSciencePage = () => {
 			})
 			.catch((err) => {
 				console.log(err);
+
+				alert(err)
 
 				alert(
 					'Unexpected error while trying to fetch course projects.'
