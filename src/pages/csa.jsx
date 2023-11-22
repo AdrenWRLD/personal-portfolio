@@ -81,8 +81,6 @@ export const APComputerSciencePage = () => {
 			.then((data) => {
 				const projects = data;
 
-				alert(JSON.stringify(data));
-
 				setProjects(projects);
 
 				// let params = new URL(document.location).searchParams;
